@@ -32,7 +32,7 @@ export default function HomePage() {
         <p className="eyebrow">Business Collaboration OS</p>
         <h1>Enabion BCOS - Phase 1 (X-first)</h1>
         <p className="lede">
-          Intent -> Decision for X-first: foundation for Enabion BCOS with shared core, Prisma-backed
+          Intent -&gt; Decision for X-first: foundation for Enabion BCOS with shared core, Prisma-backed
           Postgres, and deploy-ready Next.js app.
         </p>
         <div className="pill-row">
@@ -44,7 +44,7 @@ export default function HomePage() {
 
       <section className="mission">
         <div className="mission-heading">
-          <p className="eyebrow">Intent -> Decision</p>
+          <p className="eyebrow">Intent -&gt; Decision</p>
           <h2>Mission for X-first</h2>
           <p className="lede">
             One lane from intent to decision: capture signals, clarify context, deliver actions. Same
@@ -55,7 +55,7 @@ export default function HomePage() {
           {missions.map((entry) => (
             <div className="mission-card" key={entry.lang}>
               <span className="badge">{entry.lang}</span>
-              <h3>Intent -> Decision</h3>
+              <h3>Intent -&gt; Decision</h3>
               <p>{entry.copy}</p>
             </div>
           ))}
