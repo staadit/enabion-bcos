@@ -4,10 +4,10 @@ export const getOrganizationsCount = async (): Promise<{
   count: number | null;
   error?: string;
 }> => {
-  const client = getPrismaClient();
+  const { client, error: initError } = getPrismaClient();
 
   if (!client) {
-    return { count: null, error: 'Database is not configured' };
+    return { count: null, error: initError ?? 'Database is not configured' };
   }
 
   try {

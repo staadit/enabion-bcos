@@ -6,18 +6,19 @@ declare global {
   var __enabionPrisma: PrismaClient | undefined;
 }
 
-export const getPrismaClient = (): PrismaClient | null => {
+export const getPrismaClient = (): { client: PrismaClient | null; error?: string } => {
   if (!isDatabaseConfigured) {
-    return null;
+    return { client: null, error: 'DATABASE_URL not set' };
   }
 
   if (!global.__enabionPrisma) {
     try {
       global.__enabionPrisma = new PrismaClient();
     } catch (error) {
-      return null;
+      const message = error instanceof Error ? error.message : 'Failed to init Prisma client';
+      return { client: null, error: message };
     }
   }
 
-  return global.__enabionPrisma ?? null;
+  return { client: global.__enabionPrisma ?? null };
 };
