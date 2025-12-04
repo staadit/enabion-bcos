@@ -26,6 +26,15 @@ Dokument łączy:
 5. Rynki i języki (PL / DE / EN).  
 6. Metryki sukcesu Phase 1 i kamienie milowe.
 
+### 0.1 Change Log (Phase 1 – Spec versioning)
+
+- 2025-12-04 – v0.4 → v0.5 – [CEO + Mieszko2.0]
+  - Doprecyzowanie procesu współpracy (sekcja 0.2 / 12.1.4).
+  - Dodanie Execution & Backlog rules.
+  - M0 → doprecyzowane taski i definicja „M0 done”.
+- 2025-12-03 – v0.4 – ...
+
+
 ---
 
 ## 1. Phase 1 – cel, zakres, sukces (X-first)
@@ -754,8 +763,9 @@ Te decyzje powinny być zmieniane tylko, jeśli okaże się to absolutnie koniec
 
 **Task board (M0)**
 
-- Narzędzie: Trello / GitHub Projects / Notion – decyzja w M0.  
+- Narzędzie: GitHub Projects 
 - Kolumny: `Backlog`, `In progress (Ewa)`, `Ready for demo`, `Done (on pilot)`.
+- zarzadzane przez Ewe
 
 ---
 
@@ -845,6 +855,17 @@ Te decyzje powinny być zmieniane tylko, jeśli okaże się to absolutnie koniec
    - [ ] Zrobiony wstępny search znaku „ENABION” i kombinacji z „BCOS” w EUIPO / WIPO (notatka z wynikiem, nawet prostym: „brak oczywistego konfliktu / do dalszej analizy z prawnikiem”).
 
 Kiedy wszystkie pola checklisty są odhaczone, można formalnie uznać, że **M0 jest zrobione** i przejść do realizacji M1.
+
+
+#### 12.1.10 Board Sync Status
+
+- Spec version: v0.5
+- Last sync to GitHub Project "Enabion-BCOS":
+  - Date: 2025-12-04
+  - By: Ewa
+  - Scope: M0 issues only (6 issues: #1–#6)
+- Drift: [ ] YES  [x] NO
+
 
 ---
 
