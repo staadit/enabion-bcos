@@ -20,7 +20,6 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "7.8.0",
     "@typescript-eslint/parser": "7.8.0",
-    "@prisma/nextjs-monorepo-workaround-plugin": "^5.17.0",
     "cross-env": "^7.0.3",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
