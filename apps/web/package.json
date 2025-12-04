@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write \"./**/*.{js,ts,tsx,json,css,md}\""
+    "format": "prettier --write \"./**/*.{js,ts,tsx,json,css,md}\"",
+    "postinstall": "pnpm dlx prisma@5.13.0 generate"
   },
   "dependencies": {
     "@enabion/core": "workspace:*",
