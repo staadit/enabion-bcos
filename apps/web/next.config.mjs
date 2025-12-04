@@ -1,3 +1,5 @@
+import path from 'path';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   transpilePackages: ['@enabion/core'],
@@ -6,6 +8,9 @@ const nextConfig = {
   },
   experimental: {
     typedRoutes: true,
+    outputFileTracingIncludes: {
+      '/api/health': [path.join(process.cwd(), '../../node_modules/.prisma')],
+    },
   },
 };
 
