@@ -9,17 +9,18 @@
   ],
   "scripts": {
     "dev": "pnpm --filter @enabion/web dev",
-    "build": "pnpm --filter @enabion/web build",
+    "build": "pnpm db:generate && pnpm --filter @enabion/web build",
     "start": "pnpm --filter @enabion/web start",
     "lint": "pnpm -r lint",
     "format": "pnpm -r format",
     "db:generate": "pnpm --filter @enabion/core db:generate",
     "db:migrate": "pnpm --filter @enabion/core db:migrate",
-    "postinstall": "cross-env PRISMA_CLIENT_ENGINE_TYPE=binary pnpm --filter @enabion/core exec prisma generate --schema prisma/schema.prisma"
+    "postinstall": "pnpm db:generate"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "7.8.0",
     "@typescript-eslint/parser": "7.8.0",
+    "@prisma/nextjs-monorepo-workaround-plugin": "^5.17.0",
     "cross-env": "^7.0.3",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",

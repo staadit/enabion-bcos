@@ -1,8 +1,13 @@
 import path from 'path';
-import { withPrismaPlugin } from '@prisma/nextjs-monorepo-workaround-plugin';
+import { createRequire } from 'module';
+import { PrismaPlugin } from '@prisma/nextjs-monorepo-workaround-plugin';
+
+const require = createRequire(import.meta.url);
+const prismaClientDir = path.dirname(require.resolve('@prisma/client'));
+const prismaEnginePath = path.join(prismaClientDir, '.prisma/client');
 
 /** @type {import('next').NextConfig} */
-const baseConfig = {
+const nextConfig = {
   transpilePackages: ['@enabion/core'],
   eslint: {
     dirs: ['.'],
@@ -10,10 +15,16 @@ const baseConfig = {
   experimental: {
     typedRoutes: true,
     outputFileTracingIncludes: {
-      '/api/health': [path.join(process.cwd(), '../../node_modules/.prisma')],
-      '/api/(.*)': [path.join(process.cwd(), '../../node_modules/.prisma')],
+      '/api/health': [prismaEnginePath],
+      '/api/(.*)': [prismaEnginePath],
     },
+  },
+  webpack: (config, { isServer }) => {
+    if (isServer) {
+      config.plugins = [...config.plugins, new PrismaPlugin()];
+    }
+    return config;
   },
 };
 
-export default withPrismaPlugin(baseConfig);
+export default nextConfig;
