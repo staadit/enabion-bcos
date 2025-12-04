@@ -1,7 +1,8 @@
 import path from 'path';
+import { withPrismaPlugin } from '@prisma/nextjs-monorepo-workaround-plugin';
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const baseConfig = {
   transpilePackages: ['@enabion/core'],
   eslint: {
     dirs: ['.'],
@@ -15,4 +16,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+export default withPrismaPlugin(baseConfig);

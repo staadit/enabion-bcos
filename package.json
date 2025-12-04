@@ -15,11 +15,12 @@
     "format": "pnpm -r format",
     "db:generate": "pnpm --filter @enabion/core db:generate",
     "db:migrate": "pnpm --filter @enabion/core db:migrate",
-    "postinstall": "PRISMA_CLIENT_ENGINE_TYPE=binary pnpm --filter @enabion/core exec prisma generate --schema prisma/schema.prisma --binary-targets native rhel-openssl-1.0.x rhel-openssl-3.0.x debian-openssl-1.1.x"
+    "postinstall": "cross-env PRISMA_CLIENT_ENGINE_TYPE=binary pnpm --filter @enabion/core exec prisma generate --schema prisma/schema.prisma --binary-targets native rhel-openssl-1.0.x rhel-openssl-3.0.x debian-openssl-1.1.x"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "7.8.0",
     "@typescript-eslint/parser": "7.8.0",
+    "cross-env": "^7.0.3",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "prettier": "3.2.5",

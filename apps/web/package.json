@@ -21,6 +21,7 @@
     "@types/react": "18.2.63",
     "@types/react-dom": "18.2.19",
     "eslint": "8.57.0",
+    "@prisma/nextjs-monorepo-workaround-plugin": "^5.17.0",
     "eslint-config-next": "14.2.3",
     "prettier": "3.2.5",
     "typescript": "5.3.3"
