@@ -1,10 +1,12 @@
 import path from 'path';
 import { createRequire } from 'module';
-import { PrismaPlugin } from '@prisma/nextjs-monorepo-workaround-plugin';
+import prismaMonorepoPlugin from '@prisma/nextjs-monorepo-workaround-plugin';
 
 const require = createRequire(import.meta.url);
 const prismaClientDir = path.dirname(require.resolve('@prisma/client'));
 const prismaEnginePath = path.join(prismaClientDir, '.prisma/client');
+const PrismaPluginCtor =
+  prismaMonorepoPlugin?.PrismaPlugin ?? prismaMonorepoPlugin?.default ?? prismaMonorepoPlugin;
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -21,7 +23,7 @@ const nextConfig = {
   },
   webpack: (config, { isServer }) => {
     if (isServer) {
-      config.plugins = [...config.plugins, new PrismaPlugin()];
+      config.plugins = [...config.plugins, new PrismaPluginCtor()];
     }
     return config;
   },
