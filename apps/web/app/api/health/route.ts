@@ -5,27 +5,18 @@ import { NextResponse } from 'next/server';
 import { appEnv, getOrganizationsCount, isDatabaseConfigured } from '@enabion/core';
 
 export async function GET() {
-  let status: 'ok' | 'degraded' = 'ok';
-  let organizationsCount: number | null = null;
-  let error: string | undefined;
+  const result = isDatabaseConfigured ? await getOrganizationsCount() : { count: null, error: 'DATABASE_URL not set' };
 
-  if (!isDatabaseConfigured) {
-    status = 'degraded';
-  } else {
-    const result = await getOrganizationsCount();
-    organizationsCount = result.count;
-    if (result.error) {
-      status = 'degraded';
-      error = result.error;
-    }
-  }
+  const db: 'ok' | 'down' = result.error ? 'down' : 'ok';
+  const status: 'ok' | 'degraded' = db === 'ok' ? 'ok' : 'degraded';
 
   return NextResponse.json({
     status,
-    organizationsCount,
+    app: 'enabion-bcos',
     env: appEnv?.trim() || 'local',
-    error,
-    hasDatabaseUrl: Boolean(process.env.DATABASE_URL),
-    databaseConfigured: isDatabaseConfigured,
+    db,
+    timestamp: new Date().toISOString(),
+    organizationsCount: result.count ?? 0,
+    error: result.error,
   });
 }

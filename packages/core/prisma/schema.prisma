@@ -9,9 +9,10 @@ datasource db {
 }
 
 model Organization {
-  id        String   @id @default(cuid())
-  orgType   String
-  name      String
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  id               String   @id @default(uuid())
+  name             String
+  org_roles        String[]
+  default_language String   @default("en")
+  created_at       DateTime @default(now())
+  updated_at       DateTime @updatedAt
 }

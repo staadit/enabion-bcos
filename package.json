@@ -2,14 +2,20 @@
   "name": "enabion-bcos",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "20.x"
+  },
   "packageManager": "pnpm@8.15.6",
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
+  "dependencies": {
+    "next": "14.2.3"
+  },
   "scripts": {
     "dev": "pnpm --filter @enabion/web dev",
-    "build": "pnpm db:generate && pnpm --filter @enabion/web build",
+    "build": "pnpm db:generate && pnpm db:migrate && pnpm --filter @enabion/web build",
     "start": "pnpm --filter @enabion/web start",
     "lint": "pnpm -r lint",
     "format": "pnpm -r format",
