@@ -1,4 +1,5 @@
-import { MembershipRole, PrismaClient } from '@prisma/client';
+﻿import type { PrismaClient } from '@prisma/client';
+import { MembershipRole } from '@prisma/client';
 import bcrypt from 'bcryptjs';
 import { getPrismaClient } from '../../db/client';
 import { DomainError } from '../errors';
@@ -19,6 +20,10 @@ export type RegisterTenantResult = {
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const MIN_PASSWORD_LENGTH = 8;
 
+type SlugClient = {
+  tenant: PrismaClient['tenant'];
+};
+
 const slugify = (value: string) =>
   value
     .trim()
@@ -27,11 +32,10 @@ const slugify = (value: string) =>
     .replace(/^-+|-+$/g, '')
     .replace(/-{2,}/g, '-');
 
-const getUniqueSlug = async (client: PrismaClient, base: string): Promise<string> => {
+const getUniqueSlug = async (client: SlugClient, base: string): Promise<string> => {
   let candidate = base || 'tenant';
   let suffix = 1;
 
-  // Loop with a reasonable cap to avoid infinite attempts
   while (true) {
     const exists = await client.tenant.findUnique({ where: { slug: candidate } });
     if (!exists) {
