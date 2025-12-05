@@ -1,184 +1,184 @@
-# EnabionNexus ÔÇô Phase1_MVP-Spec_v0.4 (X-first)
+# EnabionNexus ï¿½ï¿½ï¿½ Phase1_MVP-Spec_v0.4 (X-first)
 
-**Status:** Draft (Phase 1 ÔÇô working master, X-first)  
+**Status:** Draft (Phase 1 ï¿½ï¿½ï¿½ working master, X-first)  
 **Owner:** CEO (business) + Mieszko2.0 (product/tech)  
 **Last update:** 2025-12-05
-**Source:** EnabionNexus ÔÇô Playbook v1.6 (master business doc)  
-**Scope:** Ten dokument jest jedynym g+é+¦wnym dokumentem wykonawczym Phase 1 (MVP).  
-Wszelkie inne notatki / backlogi / taski s-à jego rozwini-Öciem. W przypadku konfliktu ÔÇô ten dokument wygrywa.
+**Source:** EnabionNexus ï¿½ï¿½ï¿½ Playbook v1.6 (master business doc)  
+**Scope:** Ten dokument jest jedynym g+ï¿½+ï¿½wnym dokumentem wykonawczym Phase 1 (MVP).  
+Wszelkie inne notatki / backlogi / taski s-ï¿½ jego rozwini-ï¿½ciem. W przypadku konfliktu ï¿½ï¿½ï¿½ ten dokument wygrywa.
 
-> Phase 1 = X-first MVP. Bohaterem jest firma X (ma potrzeb-Ö, ale nie wie dok+éadnie co i z kim zrobi-ç).  
-> Firmy Y s-à obs+éu++one w wersji Vendor-lite / Y-lite (Guest Portal / Response + prosty workspace), bez pe+énego OS po ich stronie.
+> Phase 1 = X-first MVP. Bohaterem jest firma X (ma potrzeb-ï¿½, ale nie wie dok+ï¿½adnie co i z kim zrobi-ï¿½).  
+> Firmy Y s-ï¿½ obs+ï¿½u++one w wersji Vendor-lite / Y-lite (Guest Portal / Response + prosty workspace), bez pe+ï¿½nego OS po ich stronie.
 
 ---
 
-## 0. Jak czyta-ç ten dokument
+## 0. Jak czyta-ï¿½ ten dokument
 
-- Playbook v1.6 ÔÇô wizja 2030, CONNECT ÔåÆ POWER ÔåÆ GROW, 5-Step Lifecycle, Trust Graph itd.  
-- Phase1_MVP-Spec_v0.4 (X-first) ÔÇô w-àski, dowo++alny zakres pierwszego produktu z perspektywy X.  
+- Playbook v1.6 ï¿½ï¿½ï¿½ wizja 2030, CONNECT ï¿½ï¿½ï¿½ POWER ï¿½ï¿½ï¿½ GROW, 5-Step Lifecycle, Trust Graph itd.  
+- Phase1_MVP-Spec_v0.4 (X-first) ï¿½ï¿½ï¿½ w-ï¿½ski, dowo++alny zakres pierwszego produktu z perspektywy X.  
 
-Dokument +é-àczy:
+Dokument +ï¿½-ï¿½czy:
 
 1. Cel biznesowy Phase 1 dla X.  
-2. Zakres produktu (modu+éy MVP).  
+2. Zakres produktu (modu+ï¿½y MVP).  
 3. Wymagania funkcjonalne i niefunkcjonalne (v0).  
-4. Architektur-Ö i model danych v0 (X-first, Y-lite).  
-5. Rynki i j-Özyki (PL / DE / EN).  
+4. Architektur-ï¿½ i model danych v0 (X-first, Y-lite).  
+5. Rynki i j-ï¿½zyki (PL / DE / EN).  
 6. Metryki sukcesu Phase 1 i kamienie milowe.
 
-### 0.1 Change Log (Phase 1 ÔÇô Spec versioning)
+### 0.1 Change Log (Phase 1 ï¿½ï¿½ï¿½ Spec versioning)
 
-- 2025-12-04 ÔÇô v0.4 ÔåÆ v0.5 ÔÇô [CEO + Mieszko2.0]
-  - Doprecyzowanie procesu wsp+¦+épracy (sekcja 0.2 / 12.1.4).
+- 2025-12-04 ï¿½ï¿½ï¿½ v0.4 ï¿½ï¿½ï¿½ v0.5 ï¿½ï¿½ï¿½ [CEO + Mieszko2.0]
+  - Doprecyzowanie procesu wsp+ï¿½+ï¿½pracy (sekcja 0.2 / 12.1.4).
   - Dodanie Execution & Backlog rules.
-  - M0 ÔåÆ doprecyzowane taski i definicja ÔÇ×M0 doneÔÇØ.
-- 2025-12-03 ÔÇô v0.4 ÔÇô ...
+  - M0 ï¿½ï¿½ï¿½ doprecyzowane taski i definicja ï¿½ï¿½ï¿½M0 doneï¿½ï¿½ï¿½.
+- 2025-12-03 ï¿½ï¿½ï¿½ v0.4 ï¿½ï¿½ï¿½ ...
 
 
 ---
 
-## 1. Phase 1 ÔÇô cel, zakres, sukces (X-first)
+## 1. Phase 1 ï¿½ï¿½ï¿½ cel, zakres, sukces (X-first)
 
 ### 1.1 Cel Phase 1 (z perspektywy X)
 
-Dowie+¦-ç X-first MVP Business Collaboration OS, kt+¦ry dla firm X w PL/DE:
+Dowie+ï¿½-ï¿½ X-first MVP Business Collaboration OS, kt+ï¿½ry dla firm X w PL/DE:
 
-- zamienia chaotyczne pomys+éy, maile i prezentacje w ustrukturyzowany Intent,
-- pomaga zbudowa-ç kryteria wyboru partner+¦w Y,
-- umo++liwia por+¦wnanie i wyb+¦r partnera w jednym Decision Room,
-- daje podstawow-à warstw-Ö NDA / L1/L2 i Trust Room do pierwszych rozm+¦w.
+- zamienia chaotyczne pomys+ï¿½y, maile i prezentacje w ustrukturyzowany Intent,
+- pomaga zbudowa-ï¿½ kryteria wyboru partner+ï¿½w Y,
+- umo++liwia por+ï¿½wnanie i wyb+ï¿½r partnera w jednym Decision Room,
+- daje podstawow-ï¿½ warstw-ï¿½ NDA / L1/L2 i Trust Room do pierwszych rozm+ï¿½w.
 
-To pokrywa g+é+¦wnie kroki 1ÔÇô3 Enabion 5-Step Partnership Lifecycle: Clarify ÔåÆ Match & Align ÔåÆ Commit & Assure, z minimalnym Deliver (Trust Room).
+To pokrywa g+ï¿½+ï¿½wnie kroki 1ï¿½ï¿½ï¿½3 Enabion 5-Step Partnership Lifecycle: Clarify ï¿½ï¿½ï¿½ Match & Align ï¿½ï¿½ï¿½ Commit & Assure, z minimalnym Deliver (Trust Room).
 
 ### 1.2 Wysokopoziomowy zakres MVP
 
-MVP robi wy+é-àcznie:
+MVP robi wy+ï¿½-ï¿½cznie:
 
 1. X Intent Studio / Intent Coach (Clarify).  
 2. Decision Model Builder (kryteria wyboru partnera).  
-3. Vendor Candidates & Vendor-lite Response (BYOV ÔÇô bring your own vendors).  
-4. Evaluation Matrix & Decision Room (Match & Align ÔåÆ Commit & Assure).  
+3. Vendor Candidates & Vendor-lite Response (BYOV ï¿½ï¿½ï¿½ bring your own vendors).  
+4. Evaluation Matrix & Decision Room (Match & Align ï¿½ï¿½ï¿½ Commit & Assure).  
 5. NDA & Confidentiality L1/L2 (Warstwa 0/1/2 lite).  
-6. XÔåöY Trust Room (lite) dla wybranego partnera.  
-7. X Intent Pipeline (statusy Draft ÔåÆ Clarify ÔåÆ Evaluate ÔåÆ Decision).  
-8. J-Özyki: EN (domy+ølny) + PL i DE (native).  
-9. Cz-Ö+ø-ç dla Y (ÔÇ×Y-lite workspaceÔÇØ) pozwalaj-àca na:
+6. Xï¿½ï¿½ï¿½Y Trust Room (lite) dla wybranego partnera.  
+7. X Intent Pipeline (statusy Draft ï¿½ï¿½ï¿½ Clarify ï¿½ï¿½ï¿½ Evaluate ï¿½ï¿½ï¿½ Decision).  
+8. J-ï¿½zyki: EN (domy+ï¿½lny) + PL i DE (native).  
+9. Cz-ï¿½+ï¿½-ï¿½ dla Y (ï¿½ï¿½ï¿½Y-lite workspaceï¿½ï¿½ï¿½) pozwalaj-ï¿½ca na:
    - stworzenie prostego konta organizacji typu Y,
-   - przegl-àd wszystkich otrzymanych Intent+¦w (zaprosze+ä od X),
+   - przegl-ï¿½d wszystkich otrzymanych Intent+ï¿½w (zaprosze+ï¿½ od X),
    - odpowiadanie na Intenty przez Vendor-lite Response Portal,
-   - korzystanie z Avatara wsp+¦+épracy po stronie Y (pomoc w odpowiedziach).
+   - korzystanie z Avatara wsp+ï¿½+ï¿½pracy po stronie Y (pomoc w odpowiedziach).
 
 ### 1.3 Out of scope (Phase 1)
 
-- Otwarty marketplace XÔåöY (publiczne og+éoszenia, bidding, ranking).  
-- Pe+ény OS dla Y (pipeline Y, dashboard Y, advanced TrustScore dla Y).  
+- Otwarty marketplace Xï¿½ï¿½ï¿½Y (publiczne og+ï¿½oszenia, bidding, ranking).  
+- Pe+ï¿½ny OS dla Y (pipeline Y, dashboard Y, advanced TrustScore dla Y).  
 - Warstwa finansowa (escrow, Financial TrustScore, dispute resolution).  
-- EnableMark program, Hubs i pe+ény Trust Graph (tylko minimalny Trust v0).  
+- EnableMark program, Hubs i pe+ï¿½ny Trust Graph (tylko minimalny Trust v0).  
 - Data Models 2/3 (Shielded/Sovereign) jako produkt (tylko w architekturze).
 
 ### 1.4 Definicja sukcesu Phase 1 (X-first)
 
-- Minimum 3 pilot+¦w X (PL/DE), kt+¦rzy korzystaj-à z systemu do realnej decyzji o wyborze partnera Y.  
-- Minimum 10 Intent+¦w przeprowadzonych przez pe+ény flow: Intent ÔåÆ Criteria ÔåÆ Vendor Responses ÔåÆ Decision.  
+- Minimum 3 pilot+ï¿½w X (PL/DE), kt+ï¿½rzy korzystaj-ï¿½ z systemu do realnej decyzji o wyborze partnera Y.  
+- Minimum 10 Intent+ï¿½w przeprowadzonych przez pe+ï¿½ny flow: Intent ï¿½ï¿½ï¿½ Criteria ï¿½ï¿½ï¿½ Vendor Responses ï¿½ï¿½ï¿½ Decision.  
 - Subiektywny wow X: 
-  - "Bez Enabion ugrz-Ö+¦liby+ømy w mailach / slajdach", 
-  - jasna, u++ywalna Decision Summary dla zarz-àdu/procurementu.  
-- System stabilny, multi-tenant, Model 1 ÔÇô Standard (EU region) i gotowy fundament pod Phase 2 (pe+ény OS dla Y).
+  - "Bez Enabion ugrz-ï¿½+ï¿½liby+ï¿½my w mailach / slajdach", 
+  - jasna, u++ywalna Decision Summary dla zarz-ï¿½du/procurementu.  
+- System stabilny, multi-tenant, Model 1 ï¿½ï¿½ï¿½ Standard (EU region) i gotowy fundament pod Phase 2 (pe+ï¿½ny OS dla Y).
 
 ---
 
-## 2. Rynki i j-Özyki ÔÇô PL / DE / EN
+## 2. Rynki i j-ï¿½zyki ï¿½ï¿½ï¿½ PL / DE / EN
 
 ### 2.1 Rynki Phase 1
 
-- Polska (PL) ÔÇô firmy X planuj-àce projekty tech/AI/digital oraz firmy Y pe+éni-àce rol-Ö vendor+¦w w tych projektach.  
-- Niemcy (DE) ÔÇô firmy X (oraz Y jako vendorzy), podobny profil, plus cross-border XÔåöY PL/DE.
+- Polska (PL) ï¿½ï¿½ï¿½ firmy X planuj-ï¿½ce projekty tech/AI/digital oraz firmy Y pe+ï¿½ni-ï¿½ce rol-ï¿½ vendor+ï¿½w w tych projektach.  
+- Niemcy (DE) ï¿½ï¿½ï¿½ firmy X (oraz Y jako vendorzy), podobny profil, plus cross-border Xï¿½ï¿½ï¿½Y PL/DE.
 
-### 2.2 J-Özyki produktu
+### 2.2 J-ï¿½zyki produktu
 
 MVP jest natywne dla:
 
-- EN ÔÇô domy+ølny j-Özyk systemu (UI, dokumentacja, product copy),  
-- PL ÔÇô pe+éna lokalizacja UI + Avatary rozumiej-à i generuj-à PL,  
-- DE ÔÇô pe+éna lokalizacja UI + Avatary rozumiej-à i generuj-à DE.
+- EN ï¿½ï¿½ï¿½ domy+ï¿½lny j-ï¿½zyk systemu (UI, dokumentacja, product copy),  
+- PL ï¿½ï¿½ï¿½ pe+ï¿½na lokalizacja UI + Avatary rozumiej-ï¿½ i generuj-ï¿½ PL,  
+- DE ï¿½ï¿½ï¿½ pe+ï¿½na lokalizacja UI + Avatary rozumiej-ï¿½ i generuj-ï¿½ DE.
 
 Konsekwencje:
 
-- wszystkie teksty UI w i18n (klucze lokalizacyjne), ++adnych hard-coded tekst+¦w,  
+- wszystkie teksty UI w i18n (klucze lokalizacyjne), ++adnych hard-coded tekst+ï¿½w,  
 - Organization ma `default_language` (EN/PL/DE),  
 - User ma `preferred_language` (EN/PL/DE),  
 - Avatary:
-  - rozumiej-à input w EN/PL/DE,  
-  - domy+ølnie odpowiadaj-à w j-Özyku u++ytkownika,  
-  - potrafi-à przet+éumaczy-ç Intent/Decision Summary na EN/PL/DE ("Translate toÔÇª"),  
-  - maj-à te++ mo++liwo+ø-ç wysy+éania wiadomo+øci niet+éumaczonych, je++eli np. u++ytkownik zna DE i PL.
+  - rozumiej-ï¿½ input w EN/PL/DE,  
+  - domy+ï¿½lnie odpowiadaj-ï¿½ w j-ï¿½zyku u++ytkownika,  
+  - potrafi-ï¿½ przet+ï¿½umaczy-ï¿½ Intent/Decision Summary na EN/PL/DE ("Translate toï¿½Çª"),  
+  - maj-ï¿½ te++ mo++liwo+ï¿½-ï¿½ wysy+ï¿½ania wiadomo+ï¿½ci niet+ï¿½umaczonych, je++eli np. u++ytkownik zna DE i PL.
 
 ---
 
 ## 3. ICP i persony (X-first)
 
-### 3.1 ICP ÔÇô firmy X
+### 3.1 ICP ï¿½ï¿½ï¿½ firmy X
 
-ICP-X-1: Mid-size firmy X (PL/DE) 50ÔÇô500 os+¦b:
+ICP-X-1: Mid-size firmy X (PL/DE) 50ï¿½ï¿½ï¿½500 os+ï¿½b:
 
-- planuj-à projekt technologiczny / AI / digital,  
-- nie maj-à pe+énego, dojrza+éego procesu IT procurement,  
-- boj-à si-Ö z+éego wyboru partnera,  
-- ton-à w dokumentach, mailach, prezentacjach, wersjach RFP.
+- planuj-ï¿½ projekt technologiczny / AI / digital,  
+- nie maj-ï¿½ pe+ï¿½nego, dojrza+ï¿½ego procesu IT procurement,  
+- boj-ï¿½ si-ï¿½ z+ï¿½ego wyboru partnera,  
+- ton-ï¿½ w dokumentach, mailach, prezentacjach, wersjach RFP.
 
-Przyk+éadowe bran++e: retail, manufacturing, finance, services.
+Przyk+ï¿½adowe bran++e: retail, manufacturing, finance, services.
 
 ### 3.2 Persony
 
 1. Project Owner X  
-   - w+éa+øciciel biznesowy inicjatywy, ma bud++et i KPI,  
+   - w+ï¿½a+ï¿½ciciel biznesowy inicjatywy, ma bud++et i KPI,  
    - potrzebuje jasnego uzasadnienia decyzji (vendor A vs B).
 
 2. Transformation / IT Lead X  
-   - t+éumaczy potrzeby biznesowe na wymagania tech,  
-   - wsp+¦+édecyduje o kryteriach i vendorach.
+   - t+ï¿½umaczy potrzeby biznesowe na wymagania tech,  
+   - wsp+ï¿½+ï¿½decyduje o kryteriach i vendorach.
 
 3. Procurement / Legal Reviewer  
-   - dba o zgodno+ø-ç z procedurami,  
-   - potrzebuje Decision Summary w formie zrozumia+éej dla audytu.
+   - dba o zgodno+ï¿½-ï¿½ z procedurami,  
+   - potrzebuje Decision Summary w formie zrozumia+ï¿½ej dla audytu.
 
-4. Vendor Y ÔÇô Guest / VendorUser  
+4. Vendor Y ï¿½ï¿½ï¿½ Guest / VendorUser  
    - odpowiada na Intent X przez Vendor-lite Response Portal,  
-   - nie ma pe+énego OS, tylko minimalny UI do odpowiedzi lub prosty Y-lite workspace.
+   - nie ma pe+ï¿½nego OS, tylko minimalny UI do odpowiedzi lub prosty Y-lite workspace.
 
-5. Dla MVP i ma+éych firm mo++e si-Ö okaza-ç, ++e wszystkie role po stronie X/Y pe+éni jedna i ta sama osoba.
+5. Dla MVP i ma+ï¿½ych firm mo++e si-ï¿½ okaza-ï¿½, ++e wszystkie role po stronie X/Y pe+ï¿½ni jedna i ta sama osoba.
 
 ---
 
-## 4. Kluczowe do+øwiadczenia (UX / WOW)
+## 4. Kluczowe do+ï¿½wiadczenia (UX / WOW)
 
 ### 4.1 "Od chaosu do decyzji"
 
-X zaczyna z rozmytym "musimy co+ø zrobi-ç":
+X zaczyna z rozmytym "musimy co+ï¿½ zrobi-ï¿½":
 
-- nie wie dok+éadnie co, lub wie, ale nie wie jak zacz-à-ç,  
+- nie wie dok+ï¿½adnie co, lub wie, ale nie wie jak zacz-ï¿½-ï¿½,  
 - nie wie z kim,  
-- nie ma kryteri+¦w ani jednego miejsca na por+¦wnanie opcji.
+- nie ma kryteri+ï¿½w ani jednego miejsca na por+ï¿½wnanie opcji.
 
 Enabion Phase 1:
 
-> W ci-àgu jednego dnia X ma:  
+> W ci-ï¿½gu jednego dnia X ma:  
 > - doprecyzowany Intent,  
-> - jasne kryteria wyboru partner+¦w,  
-> - por+¦wnanie 2ÔÇô3 vendor+¦w,  
-> - rekomendacj-Ö (AI + w+éasn-à),  
-> - Decision Summary do zarz-àdu/procurementu,  
-> - komunikacj-Ö i wysy+éanie e-maili do vendor+¦w w Enabion (z pomoc-à Avatara).
+> - jasne kryteria wyboru partner+ï¿½w,  
+> - por+ï¿½wnanie 2ï¿½ï¿½ï¿½3 vendor+ï¿½w,  
+> - rekomendacj-ï¿½ (AI + w+ï¿½asn-ï¿½),  
+> - Decision Summary do zarz-ï¿½du/procurementu,  
+> - komunikacj-ï¿½ i wysy+ï¿½anie e-maili do vendor+ï¿½w w Enabion (z pomoc-ï¿½ Avatara).
 
-### 4.2 Vendor Y ÔÇô lepsze ni++ "wy+ølij nam prezentacj-Ö"
+### 4.2 Vendor Y ï¿½ï¿½ï¿½ lepsze ni++ "wy+ï¿½lij nam prezentacj-ï¿½"
 
-Y nie musi walczy-ç z 20 r+¦++nymi formatami RFP.  
+Y nie musi walczy-ï¿½ z 20 r+ï¿½++nymi formatami RFP.  
 
-Dostaje jeden, zrozumia+éy Intent i Response Form, w kt+¦rym Avatar pomaga napisa-ç sensown-à odpowied+¦ po EN/PL/DE.
+Dostaje jeden, zrozumia+ï¿½y Intent i Response Form, w kt+ï¿½rym Avatar pomaga napisa-ï¿½ sensown-ï¿½ odpowied+ï¿½ po EN/PL/DE.
 
 ---
 
-## 5. Modu+éy MVP (X-first)
+## 5. Modu+ï¿½y MVP (X-first)
 
 ### 5.1 X Organizations & Users
 
@@ -187,19 +187,19 @@ Opis: podstawowy model organizacji X (i minimalnie Y) z u++ytkownikami i rolami.
 In scope:
 
 - Organization z polem `org_type: X | Y`.  
-- Profil X: nazwa, kraj, bran++e, size band, rynki, j-Özyki, URL.  
+- Profil X: nazwa, kraj, bran++e, size band, rynki, j-ï¿½zyki, URL.  
 - Role X: `OrgAdmin`, `ProjectOwner`, `Evaluator`, `Viewer`.  
-- Organizacje Y jako vendor-lite (Y mo++e istnie-ç te++ tylko jako VendorCandidate bez pe+énego konta / Y-lite workspace).
+- Organizacje Y jako vendor-lite (Y mo++e istnie-ï¿½ te++ tylko jako VendorCandidate bez pe+ï¿½nego konta / Y-lite workspace).
 
 Out of scope:
 
-- granularne role, z+éo++one uprawnienia, wielopoziomowe struktury hierarchiczne.
+- granularne role, z+ï¿½o++one uprawnienia, wielopoziomowe struktury hierarchiczne.
 
 ---
 
 ### 5.2 X Intent Studio (Intent Coach)
 
-Opis: serce MVP ÔÇô doprecyzowanie potrzeby X (Clarify).
+Opis: serce MVP ï¿½ï¿½ï¿½ doprecyzowanie potrzeby X (Clarify).
 
 In scope:
 
@@ -207,103 +207,103 @@ In scope:
   - z pustego formularza ("Start from scratch"),  
   - z wklejonego tekstu (mail, notatki, transkrypt).  
 - Avatar Intent Coach:
-  - zadaje pytania doprecyzowuj-àce,  
-  - wype+énia pola Intentu: cel biznesowy, kontekst, zakres high-level, KPI, bud++et wide+éki, timeline, ryzyka, ograniczenia, preferowany model wsp+¦+épracy, j-Özyk.  
-- Oznaczanie poziomu poufno+øci Intentu (L1 / L2).  
-- Edycja Intentu przez X i wersjonowanie (v1, v2ÔÇª).
+  - zadaje pytania doprecyzowuj-ï¿½ce,  
+  - wype+ï¿½nia pola Intentu: cel biznesowy, kontekst, zakres high-level, KPI, bud++et wide+ï¿½ki, timeline, ryzyka, ograniczenia, preferowany model wsp+ï¿½+ï¿½pracy, j-ï¿½zyk.  
+- Oznaczanie poziomu poufno+ï¿½ci Intentu (L1 / L2).  
+- Edycja Intentu przez X i wersjonowanie (v1, v2ï¿½Çª).
 
 Out of scope:
 
-- templateÔÇÖy ultra-specyficzne dla danej bran++y (Phase 2+),  
-- integracje bezpo+ørednie z narz-Ödziami notek/whiteboard (Phase 2+).
+- templateï¿½ï¿½ï¿½y ultra-specyficzne dla danej bran++y (Phase 2+),  
+- integracje bezpo+ï¿½rednie z narz-ï¿½dziami notek/whiteboard (Phase 2+).
 
 ---
 
-### 5.3 Decision Model Builder (kryteria wyboru partner+¦w Y)
+### 5.3 Decision Model Builder (kryteria wyboru partner+ï¿½w Y)
 
-Opis: przek+éada Intent na kryteria i wagi oceny partner+¦w.
+Opis: przek+ï¿½ada Intent na kryteria i wagi oceny partner+ï¿½w.
 
 In scope:
 
-- Avatar proponuje list-Ö kryteri+¦w (kompetencje, do+øwiadczenie, lokalizacja, j-Özyk, cena, ryzyka, kultura, governance).  
+- Avatar proponuje list-ï¿½ kryteri+ï¿½w (kompetencje, do+ï¿½wiadczenie, lokalizacja, j-ï¿½zyk, cena, ryzyka, kultura, governance).  
 - U++ytkownik:
   - dodaje/usuwa kryteria,  
-  - ustawia wagi (0ÔÇô5),  
+  - ustawia wagi (0ï¿½ï¿½ï¿½5),  
   - oznacza must-have vs nice-to-have.  
-- Tworzy si-Ö macierz oceny, kt+¦ra b-Ödzie u++yta w Evaluation Matrix.  
-- Generowanie kr+¦tkiego tekstu "How we choose vendors" ÔÇô do Decision Summary.
+- Tworzy si-ï¿½ macierz oceny, kt+ï¿½ra b-ï¿½dzie u++yta w Evaluation Matrix.  
+- Generowanie kr+ï¿½tkiego tekstu "How we choose vendors" ï¿½ï¿½ï¿½ do Decision Summary.
 
 Out of scope:
 
-- zaawansowane scoringi machine-learningowe (na du++ej historii projekt+¦w),  
-- automatyczne importowanie kryteri+¦w z polityk korporacyjnych (Phase 2+).
+- zaawansowane scoringi machine-learningowe (na du++ej historii projekt+ï¿½w),  
+- automatyczne importowanie kryteri+ï¿½w z polityk korporacyjnych (Phase 2+).
 
 ---
 
 ### 5.4 Vendor Candidates (BYOV) & Invitations
 
-Opis: X dodaje potencjalnych partner+¦w Y do por+¦wnania.
+Opis: X dodaje potencjalnych partner+ï¿½w Y do por+ï¿½wnania.
 
 In scope:
 
-- Mo++liwo+ø-ç dodania VendorCandidate:
+- Mo++liwo+ï¿½-ï¿½ dodania VendorCandidate:
   - jako prosty rekord: nazwa firmy, kontakt, kraj, URL, notatka,  
-  - opcjonalnie powi-àzanie z istniej-àc-à Organization typu Y (gdy powstanie pe+éniejszy OS dla Y).  
-- Generowanie indywidualnych zaprosze+ä (link+¦w) do Vendor-lite Response Portal.  
-- +Üledzenie statusu: invited / opened / responded / no response.  
-- Opcjonalna pomoc Avatara: X mo++e poprosi-ç Avatara o zaproponowanie potencjalnych VendorCandidates na podstawie Intentu (publiczne +¦r+¦d+éa). X sam decyduje, kt+¦re propozycje doda-ç jako VendorCandidate.
+  - opcjonalnie powi-ï¿½zanie z istniej-ï¿½c-ï¿½ Organization typu Y (gdy powstanie pe+ï¿½niejszy OS dla Y).  
+- Generowanie indywidualnych zaprosze+ï¿½ (link+ï¿½w) do Vendor-lite Response Portal.  
+- +ï¿½ledzenie statusu: invited / opened / responded / no response.  
+- Opcjonalna pomoc Avatara: X mo++e poprosi-ï¿½ Avatara o zaproponowanie potencjalnych VendorCandidates na podstawie Intentu (publiczne +ï¿½r+ï¿½d+ï¿½a). X sam decyduje, kt+ï¿½re propozycje doda-ï¿½ jako VendorCandidate.
 
 Out of scope:
 
-- publiczny katalog vendor+¦w,  
-- reklamy, listing fees, tokenizacja "slot+¦w".
+- publiczny katalog vendor+ï¿½w,  
+- reklamy, listing fees, tokenizacja "slot+ï¿½w".
 
 ---
 
 ### 5.5 Vendor-lite Response Portal (Y Guest)
 
-Opis: minimalny portal, w kt+¦rym Y widzi Intent X i odpowiada w ustrukturyzowany spos+¦b.
+Opis: minimalny portal, w kt+ï¿½rym Y widzi Intent X i odpowiada w ustrukturyzowany spos+ï¿½b.
 
 In scope:
 
-- Strona z Intentem (read-only) + kr+¦tka sekcja "O X" i "Jak oceniamy vendor+¦w".  
+- Strona z Intentem (read-only) + kr+ï¿½tka sekcja "O X" i "Jak oceniamy vendor+ï¿½w".  
 - Formularz odpowiedzi:
-  - sekcje dopasowane do kryteri+¦w (np. do+øwiadczenie, approach, timeline, koszt, zesp+¦+é, ryzyka),  
-  - mo++liwo+ø-ç do+é-àczenia referencji (URL / tekst, nie pliki binarne na MVP).  
-- Avatar, kt+¦ry pomaga Y napisa-ç odpowied+¦ (EN/PL/DE).  
-- Po wys+éaniu dane s-à zapami-Ötywane jako VendorResponse i mapowane na Evaluation Matrix.
+  - sekcje dopasowane do kryteri+ï¿½w (np. do+ï¿½wiadczenie, approach, timeline, koszt, zesp+ï¿½+ï¿½, ryzyka),  
+  - mo++liwo+ï¿½-ï¿½ do+ï¿½-ï¿½czenia referencji (URL / tekst, nie pliki binarne na MVP).  
+- Avatar, kt+ï¿½ry pomaga Y napisa-ï¿½ odpowied+ï¿½ (EN/PL/DE).  
+- Po wys+ï¿½aniu dane s-ï¿½ zapami-ï¿½tywane jako VendorResponse i mapowane na Evaluation Matrix.
 
 Out of scope:
 
-- pe+éne konto Y z pipelineÔÇÖem, dashboardem, TrustScore,  
-- zarz-àdzanie dokumentami kontraktowymi po stronie Y.
+- pe+ï¿½ne konto Y z pipelineï¿½ï¿½ï¿½em, dashboardem, TrustScore,  
+- zarz-ï¿½dzanie dokumentami kontraktowymi po stronie Y.
 
 ---
 
 ### 5.6 Evaluation Matrix & Decision Room
 
-Opis: miejsce, gdzie X por+¦wnuje vendor+¦w i podejmuje decyzj-Ö.
+Opis: miejsce, gdzie X por+ï¿½wnuje vendor+ï¿½w i podejmuje decyzj-ï¿½.
 
 In scope:
 
 - Widok macierzy:
   - wiersze: vendorzy Y,  
   - kolumny: kryteria,  
-  - kom+¦rki: score + komentarz.  
+  - kom+ï¿½rki: score + komentarz.  
 - Avatar:
-  - proponuje initial score na podstawie odpowiedzi Y i wag kryteri+¦w,  
-  - pod+øwietla ryzyka (np. brak do+øwiadczenia w bran++y),  
+  - proponuje initial score na podstawie odpowiedzi Y i wag kryteri+ï¿½w,  
+  - pod+ï¿½wietla ryzyka (np. brak do+ï¿½wiadczenia w bran++y),  
   - sugeruje pytania follow-up.  
-- X mo++e r-Öcznie korygowa-ç score i dodawa-ç komentarze.  
+- X mo++e r-ï¿½cznie korygowa-ï¿½ score i dodawa-ï¿½ komentarze.  
 - Decision Summary:
-  - ranking vendor+¦w,  
+  - ranking vendor+ï¿½w,  
   - rekomendacja Avatara (z zastrze++eniem, ++e to sugestia, nie decyzja),  
-  - finalny wyb+¦r vendor+¦w i uzasadnienie (tekst dla zarz-àdu/procurementu).
+  - finalny wyb+ï¿½r vendor+ï¿½w i uzasadnienie (tekst dla zarz-ï¿½du/procurementu).
 
 Out of scope:
 
 - automatyczne generowanie formalnego kontraktu (Phase 2+),  
-- integracja z wewn-Ötrznymi systemami purchase order.
+- integracja z wewn-ï¿½trznymi systemami purchase order.
 
 ---
 
@@ -313,234 +313,234 @@ Opis: prosty model NDA w Phase 1.
 
 In scope:
 
-- Oznaczanie spisu tre+øci / komunikacji jako L1 / L2.  
-- Warstwa 0: No-NDA Zone (L1) ÔÇô Clarify i wysoki poziom Match & Align mog-à dzia+éa-ç bez NDA.  
-- Warstwa 1: Enabion Mutual NDA ÔÇô click-wrap dla pre-sales (mo++e by-ç w+é-àczony w MVP jako opt-in).  
-- Warstwa 2: Custom NDA FastTrack ÔÇô X mo++e zarejestrowa-ç sw+¦j wz+¦r NDA i zaznaczy-ç status NDA per vendor (placeholder, nie pe+éna integracja e-podpisu).  
-- System ostrzega u++ytkownika, gdy pr+¦buje oznaczy-ç tre+øci jako L2 bez aktywnej NDA.
+- Oznaczanie spisu tre+ï¿½ci / komunikacji jako L1 / L2.  
+- Warstwa 0: No-NDA Zone (L1) ï¿½ï¿½ï¿½ Clarify i wysoki poziom Match & Align mog-ï¿½ dzia+ï¿½a-ï¿½ bez NDA.  
+- Warstwa 1: Enabion Mutual NDA ï¿½ï¿½ï¿½ click-wrap dla pre-sales (mo++e by-ï¿½ w+ï¿½-ï¿½czony w MVP jako opt-in).  
+- Warstwa 2: Custom NDA FastTrack ï¿½ï¿½ï¿½ X mo++e zarejestrowa-ï¿½ sw+ï¿½j wz+ï¿½r NDA i zaznaczy-ï¿½ status NDA per vendor (placeholder, nie pe+ï¿½na integracja e-podpisu).  
+- System ostrzega u++ytkownika, gdy pr+ï¿½buje oznaczy-ï¿½ tre+ï¿½ci jako L2 bez aktywnej NDA.
 
 Out of scope:
 
 - integracje z DocuSign / Adobe Sign (poza prostym przechowywaniem statusu),  
-- pe+éne zarz-àdzanie cyklem ++ycia NDA.
+- pe+ï¿½ne zarz-ï¿½dzanie cyklem ++ycia NDA.
 
 ---
 
 ### 5.8 Trust Room (Secure Collaboration Room lite)
 
-Opis: dialog XÔåöwybrany vendor Y w jednym pokoju.
+Opis: dialog Xï¿½ï¿½ï¿½wybrany vendor Y w jednym pokoju.
 
 In scope:
 
-- Jeden Trust Room per Intent + Vendor (lub Intent + lista vendor+¦w w fazie pyta+ä).  
-- Wiadomo+øci z flag-à L1/L2.  
+- Jeden Trust Room per Intent + Vendor (lub Intent + lista vendor+ï¿½w w fazie pyta+ï¿½).  
+- Wiadomo+ï¿½ci z flag-ï¿½ L1/L2.  
 - Avatar w pokoju:
   - generuje podsumowania,  
   - przypomina o ryzykach / zadaniach,  
-  - ostrzega przy pr+¦bie wprowadzenia L2 bez NDA.
+  - ostrzega przy pr+ï¿½bie wprowadzenia L2 bez NDA.
 
 Out of scope:
 
-- zaawansowany file-sharing (Phase 2 ÔÇô na linkach / integracjach),  
+- zaawansowany file-sharing (Phase 2 ï¿½ï¿½ï¿½ na linkach / integracjach),  
 - integracje push/pull z Teams/Slack poza prostymi powiadomieniami.
 
 ---
 
 ### 5.9 X Intent Pipeline
 
-Opis: kr+¦tki pipeline Intent+¦w po stronie X.
+Opis: kr+ï¿½tki pipeline Intent+ï¿½w po stronie X.
 
 In scope:
 
 - Statusy Intentu:
   - Draft, Clarify, Evaluate Vendors, Decision, On Hold, Archived.  
 - Widok tabeli / kanbana:
-  - kolumny: status, owner, bud++et wide+éki, rynek (PL/DE/Other), j-Özyk, liczba vendor+¦w.  
-- Proste filtry (status, owner, kraj, j-Özyk).
+  - kolumny: status, owner, bud++et wide+ï¿½ki, rynek (PL/DE/Other), j-ï¿½zyk, liczba vendor+ï¿½w.  
+- Proste filtry (status, owner, kraj, j-ï¿½zyk).
 
 Out of scope:
 
-- pe+ény CRM, forecasty, revenue pipeline Y.
+- pe+ï¿½ny CRM, forecasty, revenue pipeline Y.
 
 ---
 
 ### 5.10 Y-lite Workspace (Vendor-side view)
 
 Opis:  
-Minimalny widok ÔÇ×konta dostawcyÔÇØ dla firm Y, kt+¦re odpowiadaj-à na wi-Öcej ni++ jeden Intent.  
-Y-lite workspace NIE jest pe+énym OS dla Y ÔÇô s+éu++y tylko do obs+éugi zaprosze+ä od X.
+Minimalny widok ï¿½ï¿½ï¿½konta dostawcyï¿½ï¿½ï¿½ dla firm Y, kt+ï¿½re odpowiadaj-ï¿½ na wi-ï¿½cej ni++ jeden Intent.  
+Y-lite workspace NIE jest pe+ï¿½nym OS dla Y ï¿½ï¿½ï¿½ s+ï¿½u++y tylko do obs+ï¿½ugi zaprosze+ï¿½ od X.
 
 In scope (Phase 1):
 
-- Organizacja mo++e mie-ç `org_type: Y` (vendor).  
+- Organizacja mo++e mie-ï¿½ `org_type: Y` (vendor).  
 - U++ytkownik Y (rola `VendorUser`) po zalogowaniu:
-  - widzi list-Ö wszystkich VendorCandidates powi-àzanych z jego organizacj-à lub mailem (czyli Intenty, do kt+¦rych zosta+é zaproszony),  
-  - mo++e otworzy-ç ka++dy Intent w widoku read-only,  
-  - mo++e przej+ø-ç do formularza odpowiedzi (Vendor-lite Response Portal) i wys+éa-ç/edytowa-ç swoj-à odpowied+¦,  
-  - widzi statusy: zaproszony / odpowiedzia+é / w trakcie rozm+¦w.  
-- Y ma dost-Öp do Avatara wsp+¦+épracy:
+  - widzi list-ï¿½ wszystkich VendorCandidates powi-ï¿½zanych z jego organizacj-ï¿½ lub mailem (czyli Intenty, do kt+ï¿½rych zosta+ï¿½ zaproszony),  
+  - mo++e otworzy-ï¿½ ka++dy Intent w widoku read-only,  
+  - mo++e przej+ï¿½-ï¿½ do formularza odpowiedzi (Vendor-lite Response Portal) i wys+ï¿½a-ï¿½/edytowa-ï¿½ swoj-ï¿½ odpowied+ï¿½,  
+  - widzi statusy: zaproszony / odpowiedzia+ï¿½ / w trakcie rozm+ï¿½w.  
+- Y ma dost-ï¿½p do Avatara wsp+ï¿½+ï¿½pracy:
   - pomoc w pisaniu odpowiedzi (EN/PL/DE),  
-  - pomoc w formu+éowaniu pyta+ä do X,  
-  - kr+¦tkie podsumowania rozmowy w Trust Room.
+  - pomoc w formu+ï¿½owaniu pyta+ï¿½ do X,  
+  - kr+ï¿½tkie podsumowania rozmowy w Trust Room.
 
 Out of scope (Phase 1):
 
-- pe+ény pipeline sprzeda++owy / forecast po stronie Y,  
+- pe+ï¿½ny pipeline sprzeda++owy / forecast po stronie Y,  
 - zaawansowane dashboardy TrustScore dla Y,  
-- zarz-àdzanie wieloma zespo+éami/rolami wewn-àtrz Y (na MVP wystarczy jedna rola `VendorUser`).
+- zarz-ï¿½dzanie wieloma zespo+ï¿½ami/rolami wewn-ï¿½trz Y (na MVP wystarczy jedna rola `VendorUser`).
 
 ---
 
 ## 6. User Journeys (X-first)
 
-### 6.1 Journey #0 ÔÇô X doprecyzowuje potrzeb-Ö (bez vendor+¦w)
+### 6.1 Journey #0 ï¿½ï¿½ï¿½ X doprecyzowuje potrzeb-ï¿½ (bez vendor+ï¿½w)
 
-1. OrgAdmin X zak+éada organizacj-Ö, wybiera domy+ølny j-Özyk (PL/DE/EN).  
+1. OrgAdmin X zak+ï¿½ada organizacj-ï¿½, wybiera domy+ï¿½lny j-ï¿½zyk (PL/DE/EN).  
 2. ProjectOwner X tworzy Intent w Intent Studio (blank lub paste).  
 3. Avatar Intent Coach zadaje pytania i generuje strukturalny Intent.  
-4. X edytuje i akceptuje Intent v1, status = Draft ÔåÆ Clarify.
+4. X edytuje i akceptuje Intent v1, status = Draft ï¿½ï¿½ï¿½ Clarify.
 
-### 6.2 Journey #1 ÔÇô X definiuje kryteria i zaprasza vendor+¦w
+### 6.2 Journey #1 ï¿½ï¿½ï¿½ X definiuje kryteria i zaprasza vendor+ï¿½w
 
 1. X otwiera Intent, przechodzi do Decision Model Builder.  
 2. Avatar proponuje kryteria; X ustawia wagi i must-have.  
-3. X dodaje 2ÔÇô3 VendorCandidates (istniej-àcy partnerzy, nowe firmy).  
-3a. (Opcjonalnie) X prosi Avatara o sugestie vendor+¦w. Avatar pokazuje list-Ö potencjalnych firm na podstawie Intenta. X wybiera 1ÔÇô2 z nich i dodaje jako VendorCandidates (`source = ENABION_SUGGESTED`).  
-4. System wysy+éa im zaproszenia do Vendor-lite Response Portal.  
+3. X dodaje 2ï¿½ï¿½ï¿½3 VendorCandidates (istniej-ï¿½cy partnerzy, nowe firmy).  
+3a. (Opcjonalnie) X prosi Avatara o sugestie vendor+ï¿½w. Avatar pokazuje list-ï¿½ potencjalnych firm na podstawie Intenta. X wybiera 1ï¿½ï¿½ï¿½2 z nich i dodaje jako VendorCandidates (`source = ENABION_SUGGESTED`).  
+4. System wysy+ï¿½a im zaproszenia do Vendor-lite Response Portal.  
 5. Status Intentu = Evaluate Vendors.
 
-### 6.3 Journey #2 ÔÇô Vendor Y odpowiada, X por+¦wnuje i decyduje
+### 6.3 Journey #2 ï¿½ï¿½ï¿½ Vendor Y odpowiada, X por+ï¿½wnuje i decyduje
 
 1. Vendor Y otwiera link, widzi Intent X i formularz odpowiedzi.  
-2. Y wype+énia odpowied+¦ (z pomoc-à Avatara) i wysy+éa.  
+2. Y wype+ï¿½nia odpowied+ï¿½ (z pomoc-ï¿½ Avatara) i wysy+ï¿½a.  
 3. X widzi odpowiedzi w Evaluation Matrix, z initial scoring AI.  
 4. X modyfikuje score, dodaje komentarze, pyta follow-up (komentarze / Trust Room).  
-5. W Decision Room X wybiera vendor+¦w, zapisuje decyzj-Ö i uzasadnienie.  
-6. Status Intentu = Decision ÔåÆ Archived lub On Hold.
+5. W Decision Room X wybiera vendor+ï¿½w, zapisuje decyzj-ï¿½ i uzasadnienie.  
+6. Status Intentu = Decision ï¿½ï¿½ï¿½ Archived lub On Hold.
 
-### 6.4 Journey #3 ÔÇô Trust Room po wyborze partnera
+### 6.4 Journey #3 ï¿½ï¿½ï¿½ Trust Room po wyborze partnera
 
-1. Po wyborze vendor+¦w X mo++e aktywowa-ç NDA na poziomie Intent-Vendor.  
+1. Po wyborze vendor+ï¿½w X mo++e aktywowa-ï¿½ NDA na poziomie Intent-Vendor.  
 2. Tworzony jest Trust Room dla Intentu i wybranego vendora.  
-3. X i Y wymieniaj-à pierwsze informacje L2 (po NDA) i ustalaj-à next steps.
+3. X i Y wymieniaj-ï¿½ pierwsze informacje L2 (po NDA) i ustalaj-ï¿½ next steps.
 
-### 6.5 Journey #4 ÔÇô Vendor Y u++ywa Y-lite Workspace
+### 6.5 Journey #4 ï¿½ï¿½ï¿½ Vendor Y u++ywa Y-lite Workspace
 
 1. Firma Y otrzymuje zaproszenie do Intentu (link z Enabion).  
-2. Przed wys+éaniem odpowiedzi przedstawiciel Y wybiera opcj-Ö ÔÇ×Chc-Ö mie-ç konto i widzie-ç wszystkie moje IntentyÔÇØ ÔåÆ tworzy si-Ö konto organizacji typu Y i u++ytkownik `VendorUser`.  
-3. `VendorUser` loguje si-Ö do Y-lite Workspace i widzi list-Ö wszystkich Intent+¦w, do kt+¦rych zosta+é zaproszony.  
-4. Otwiera wybrany Intent, korzysta z Avatara, aby napisa-ç odpowied+¦, i wysy+éa j-à do X.  
-5. W kolejnych zaproszeniach Y nie musi zak+éada-ç konta ÔÇô nowe VendorCandidates s-à automatycznie widoczne na li+øcie w Y-lite Workspace.
+2. Przed wys+ï¿½aniem odpowiedzi przedstawiciel Y wybiera opcj-ï¿½ ï¿½ï¿½ï¿½Chc-ï¿½ mie-ï¿½ konto i widzie-ï¿½ wszystkie moje Intentyï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ tworzy si-ï¿½ konto organizacji typu Y i u++ytkownik `VendorUser`.  
+3. `VendorUser` loguje si-ï¿½ do Y-lite Workspace i widzi list-ï¿½ wszystkich Intent+ï¿½w, do kt+ï¿½rych zosta+ï¿½ zaproszony.  
+4. Otwiera wybrany Intent, korzysta z Avatara, aby napisa-ï¿½ odpowied+ï¿½, i wysy+ï¿½a j-ï¿½ do X.  
+5. W kolejnych zaproszeniach Y nie musi zak+ï¿½ada-ï¿½ konta ï¿½ï¿½ï¿½ nowe VendorCandidates s-ï¿½ automatycznie widoczne na li+ï¿½cie w Y-lite Workspace.
 
 ---
 
-## 7. Functional Requirements (FR) ÔÇô v0
+## 7. Functional Requirements (FR) ï¿½ï¿½ï¿½ v0
 
 ### 7.1 Organizations & Users
 
-- FR-ORG-001 ÔÇô System allows creating organizations with `org_type: X|Y`.  
-- FR-ORG-002 ÔÇô Org X profile stores: name, country, industries, size_band, markets, languages, website.  
-- FR-ORG-003 ÔÇô Roles for X: OrgAdmin, ProjectOwner, Evaluator, Viewer. Lub wszystkie role mo++e pe+éni-ç jedna osoba dla ma+éych firm.  
-- FR-ORG-004 ÔÇô Guest vendor Y can respond to an Intent via tokenized link without full account. All interactions are logged.
+- FR-ORG-001 ï¿½ï¿½ï¿½ System allows creating organizations with `org_type: X|Y`.  
+- FR-ORG-002 ï¿½ï¿½ï¿½ Org X profile stores: name, country, industries, size_band, markets, languages, website.  
+- FR-ORG-003 ï¿½ï¿½ï¿½ Roles for X: OrgAdmin, ProjectOwner, Evaluator, Viewer. Lub wszystkie role mo++e pe+ï¿½ni-ï¿½ jedna osoba dla ma+ï¿½ych firm.  
+- FR-ORG-004 ï¿½ï¿½ï¿½ Guest vendor Y can respond to an Intent via tokenized link without full account. All interactions are logged.
 
 ### 7.2 Language & Localization
 
-- FR-LANG-001 ÔÇô Organization has `default_language` (EN/PL/DE).  
-- FR-LANG-002 ÔÇô User has `preferred_language` (EN/PL/DE).  
-- FR-LANG-003 ÔÇô All static UI strings are loaded from localization files for EN/PL/DE.  
-- FR-LANG-004 ÔÇô Avatars accept input and generate output in EN/PL/DE.
+- FR-LANG-001 ï¿½ï¿½ï¿½ Organization has `default_language` (EN/PL/DE).  
+- FR-LANG-002 ï¿½ï¿½ï¿½ User has `preferred_language` (EN/PL/DE).  
+- FR-LANG-003 ï¿½ï¿½ï¿½ All static UI strings are loaded from localization files for EN/PL/DE.  
+- FR-LANG-004 ï¿½ï¿½ï¿½ Avatars accept input and generate output in EN/PL/DE.
 
 ### 7.3 X Intent Studio
 
-- FR-INT-001 ÔÇô User can create Intent from scratch or by pasting free-form text.  
-- FR-INT-002 ÔÇô Avatar generates structured Intent fields from free text.  
-- FR-INT-003 ÔÇô User can edit generated Intent and save a version.  
-- FR-INT-004 ÔÇô Intent has `confidentiality_level` field (L1/L2).
+- FR-INT-001 ï¿½ï¿½ï¿½ User can create Intent from scratch or by pasting free-form text.  
+- FR-INT-002 ï¿½ï¿½ï¿½ Avatar generates structured Intent fields from free text.  
+- FR-INT-003 ï¿½ï¿½ï¿½ User can edit generated Intent and save a version.  
+- FR-INT-004 ï¿½ï¿½ï¿½ Intent has `confidentiality_level` field (L1/L2).
 
 ### 7.4 Decision Model
 
-- FR-DEC-001 ÔÇô System allows adding evaluation criteria (name, description, weight, must_have).  
-- FR-DEC-002 ÔÇô Avatar can propose an initial set of criteria based on Intent.  
-- FR-DEC-003 ÔÇô Criteria are linked to an Intent and used in Vendor Responses and Evaluation Matrix.
+- FR-DEC-001 ï¿½ï¿½ï¿½ System allows adding evaluation criteria (name, description, weight, must_have).  
+- FR-DEC-002 ï¿½ï¿½ï¿½ Avatar can propose an initial set of criteria based on Intent.  
+- FR-DEC-003 ï¿½ï¿½ï¿½ Criteria are linked to an Intent and used in Vendor Responses and Evaluation Matrix.
 
 ### 7.5 Vendor Candidates & Responses
 
-- FR-VEN-001 ÔÇô User can create VendorCandidate with name and contact email.  
-- FR-VEN-002 ÔÇô System generates unique invitation URL per VendorCandidate.  
-- FR-VEN-003 ÔÇô Vendor can submit a structured response mapped to Intent criteria.  
-- FR-VEN-004 ÔÇô Vendor responses are stored as VendorResponse entities linked to VendorCandidate and Intent.  
-- FR-VEN-005 ÔÇô User (X) can ask Avatar to search public internet sources for potential VendorCandidates based on the Intent. Avatar pokazuje list-Ö propozycji (nazwa firmy, URL, kr+¦tki opis ÔÇ×dlaczego pasujeÔÇØ), bez automatycznego kontaktu z tymi firmami.  
-- FR-VEN-006 ÔÇô X mo++e wybra-ç, kt+¦re z proponowanych firm doda-ç jako VendorCandidate. Przy dodaniu system zapisuje `source = 'ENABION_SUGGESTED'` dla tego VendorCandidate.
+- FR-VEN-001 ï¿½ï¿½ï¿½ User can create VendorCandidate with name and contact email.  
+- FR-VEN-002 ï¿½ï¿½ï¿½ System generates unique invitation URL per VendorCandidate.  
+- FR-VEN-003 ï¿½ï¿½ï¿½ Vendor can submit a structured response mapped to Intent criteria.  
+- FR-VEN-004 ï¿½ï¿½ï¿½ Vendor responses are stored as VendorResponse entities linked to VendorCandidate and Intent.  
+- FR-VEN-005 ï¿½ï¿½ï¿½ User (X) can ask Avatar to search public internet sources for potential VendorCandidates based on the Intent. Avatar pokazuje list-ï¿½ propozycji (nazwa firmy, URL, kr+ï¿½tki opis ï¿½ï¿½ï¿½dlaczego pasujeï¿½ï¿½ï¿½), bez automatycznego kontaktu z tymi firmami.  
+- FR-VEN-006 ï¿½ï¿½ï¿½ X mo++e wybra-ï¿½, kt+ï¿½re z proponowanych firm doda-ï¿½ jako VendorCandidate. Przy dodaniu system zapisuje `source = 'ENABION_SUGGESTED'` dla tego VendorCandidate.
 
 ### 7.6 Evaluation Matrix & Decision
 
-- FR-EVAL-001 ÔÇô System displays an evaluation matrix for each Intent with vendors vs criteria.  
-- FR-EVAL-002 ÔÇô Users can assign and edit scores per vendor-criterion.  
-- FR-EVAL-003 ÔÇô Avatar can propose initial scores based on VendorResponses.  
-- FR-EVAL-004 ÔÇô System stores a Decision entity with selected vendors and rationale text.
+- FR-EVAL-001 ï¿½ï¿½ï¿½ System displays an evaluation matrix for each Intent with vendors vs criteria.  
+- FR-EVAL-002 ï¿½ï¿½ï¿½ Users can assign and edit scores per vendor-criterion.  
+- FR-EVAL-003 ï¿½ï¿½ï¿½ Avatar can propose initial scores based on VendorResponses.  
+- FR-EVAL-004 ï¿½ï¿½ï¿½ System stores a Decision entity with selected vendors and rationale text.
 
 ### 7.7 NDA & Confidentiality
 
-- FR-NDA-001 ÔÇô System allows tracking NDA status per Intent-Vendor (none / mutual / custom).  
-- FR-NDA-002 ÔÇô System prevents marking messages as L2 without NDA (or shows strong warning).  
-- FR-NDA-003 ÔÇô NDA acceptance events are logged (user, timestamp, type).
+- FR-NDA-001 ï¿½ï¿½ï¿½ System allows tracking NDA status per Intent-Vendor (none / mutual / custom).  
+- FR-NDA-002 ï¿½ï¿½ï¿½ System prevents marking messages as L2 without NDA (or shows strong warning).  
+- FR-NDA-003 ï¿½ï¿½ï¿½ NDA acceptance events are logged (user, timestamp, type).
 
 ### 7.8 Trust Room
 
-- FR-ROOM-001 ÔÇô System can create a Trust Room linked to an Intent and vendor.  
-- FR-ROOM-002 ÔÇô Users can post messages with text content and L1/L2 flag.  
-- FR-ROOM-003 ÔÇô Avatar can produce a summary of the conversation on demand.
+- FR-ROOM-001 ï¿½ï¿½ï¿½ System can create a Trust Room linked to an Intent and vendor.  
+- FR-ROOM-002 ï¿½ï¿½ï¿½ Users can post messages with text content and L1/L2 flag.  
+- FR-ROOM-003 ï¿½ï¿½ï¿½ Avatar can produce a summary of the conversation on demand.
 
 ### 7.9 X Intent Pipeline
 
-- FR-PIPE-001 ÔÇô Intent has a `status` from a fixed enum: Draft, Clarify, EvaluateVendors, Decision, OnHold, Archived.  
-- FR-PIPE-002 ÔÇô System provides a list/board view of all Intents for an organization with filters by status, owner, market, language.
+- FR-PIPE-001 ï¿½ï¿½ï¿½ Intent has a `status` from a fixed enum: Draft, Clarify, EvaluateVendors, Decision, OnHold, Archived.  
+- FR-PIPE-002 ï¿½ï¿½ï¿½ System provides a list/board view of all Intents for an organization with filters by status, owner, market, language.
 
 ### 7.10 Y-lite Workspace (Vendor-side view)
 
-- FR-Y-001 ÔÇô Organization with `org_type: Y` mo++e mie-ç co najmniej jednego u++ytkownika z rol-à `VendorUser`.  
-- FR-Y-002 ÔÇô Po zalogowaniu `VendorUser` widzi list-Ö wszystkich VendorCandidates powi-àzanych z jego organizacj-à lub adresem e-mail (Intenty, do kt+¦rych zosta+é zaproszony).  
-- FR-Y-003 ÔÇô `VendorUser` mo++e otworzy-ç zaproszony Intent, przej+ø-ç do formularza odpowiedzi (Vendor-lite Response Portal) oraz zapisa-ç/edytowa-ç swoj-à odpowied+¦.  
-- FR-Y-004 ÔÇô `VendorUser` ma dost-Öp do Avatara wsp+¦+épracy, kt+¦ry pomaga pisa-ç odpowiedzi oraz pytania do X (EN/PL/DE).
+- FR-Y-001 ï¿½ï¿½ï¿½ Organization with `org_type: Y` mo++e mie-ï¿½ co najmniej jednego u++ytkownika z rol-ï¿½ `VendorUser`.  
+- FR-Y-002 ï¿½ï¿½ï¿½ Po zalogowaniu `VendorUser` widzi list-ï¿½ wszystkich VendorCandidates powi-ï¿½zanych z jego organizacj-ï¿½ lub adresem e-mail (Intenty, do kt+ï¿½rych zosta+ï¿½ zaproszony).  
+- FR-Y-003 ï¿½ï¿½ï¿½ `VendorUser` mo++e otworzy-ï¿½ zaproszony Intent, przej+ï¿½-ï¿½ do formularza odpowiedzi (Vendor-lite Response Portal) oraz zapisa-ï¿½/edytowa-ï¿½ swoj-ï¿½ odpowied+ï¿½.  
+- FR-Y-004 ï¿½ï¿½ï¿½ `VendorUser` ma dost-ï¿½p do Avatara wsp+ï¿½+ï¿½pracy, kt+ï¿½ry pomaga pisa-ï¿½ odpowiedzi oraz pytania do X (EN/PL/DE).
 
 ---
 
-## 8. Non-Functional Requirements (NFR) ÔÇô v0
+## 8. Non-Functional Requirements (NFR) ï¿½ï¿½ï¿½ v0
 
-### 8.1 Og+¦lne
+### 8.1 Og+ï¿½lne
 
-- NFR-GEN-001 ÔÇô Phase 1 dzia+éa w Data Model 1 ÔÇô Standard (multi-tenant, EU region).  
-- NFR-GEN-002 ÔÇô Aplikacja webowa (desktop-first, mobile-friendly).
+- NFR-GEN-001 ï¿½ï¿½ï¿½ Phase 1 dzia+ï¿½a w Data Model 1 ï¿½ï¿½ï¿½ Standard (multi-tenant, EU region).  
+- NFR-GEN-002 ï¿½ï¿½ï¿½ Aplikacja webowa (desktop-first, mobile-friendly).
 
-### 8.2 Wydajno+ø-ç
+### 8.2 Wydajno+ï¿½-ï¿½
 
-- NFR-PERF-001 ÔÇô P95 czasu odpowiedzi AI (Intent generation, scoring) < 15 s dla 2 000 s+é+¦w inputu.  
-- NFR-PERF-002 ÔÇô P95 czasu odpowiedzi UI (bez AI) < 500 ms.
+- NFR-PERF-001 ï¿½ï¿½ï¿½ P95 czasu odpowiedzi AI (Intent generation, scoring) < 15 s dla 2 000 s+ï¿½+ï¿½w inputu.  
+- NFR-PERF-002 ï¿½ï¿½ï¿½ P95 czasu odpowiedzi UI (bez AI) < 500 ms.
 
-### 8.3 Bezpiecze+ästwo
+### 8.3 Bezpiecze+ï¿½stwo
 
-- NFR-SEC-001 ÔÇô Wszystkie rekordy s-à powi-àzane z `organization_id`, izolacja tenant+¦w na poziomie aplikacji i bazy.  
-- NFR-SEC-002 ÔÇô Codzienny backup DB, RPO Ôëñ 24 h.  
-- NFR-SEC-003 ÔÇô Dane przechowywane w regionie EU.
+- NFR-SEC-001 ï¿½ï¿½ï¿½ Wszystkie rekordy s-ï¿½ powi-ï¿½zane z `organization_id`, izolacja tenant+ï¿½w na poziomie aplikacji i bazy.  
+- NFR-SEC-002 ï¿½ï¿½ï¿½ Codzienny backup DB, RPO ï¿½ï¿½ï¿½ 24 h.  
+- NFR-SEC-003 ï¿½ï¿½ï¿½ Dane przechowywane w regionie EU.
 
 ### 8.4 i18n / l10n
 
-- NFR-LANG-001 ÔÇô Nowe teksty UI musz-à by-ç dodawane wy+é-àcznie przez pliki lokalizacyjne.  
-- NFR-LANG-002 ÔÇô Dodanie nowego j-Özyka nie wymaga zmian w logice biznesowej.
+- NFR-LANG-001 ï¿½ï¿½ï¿½ Nowe teksty UI musz-ï¿½ by-ï¿½ dodawane wy+ï¿½-ï¿½cznie przez pliki lokalizacyjne.  
+- NFR-LANG-002 ï¿½ï¿½ï¿½ Dodanie nowego j-ï¿½zyka nie wymaga zmian w logice biznesowej.
 
 ### 8.5 UX / Avatars
 
-- NFR-UX-001 ÔÇô Avatary nie gubi-à kontekstu w obr-Öbie Intentu: kontekst = organization + intent + ostatnie wiadomo+øci / responses.  
-- NFR-UX-002 ÔÇô X w jednym widoku widzi ile Intent+¦w jest w Draft/Clarify/Evaluate/Decision.
+- NFR-UX-001 ï¿½ï¿½ï¿½ Avatary nie gubi-ï¿½ kontekstu w obr-ï¿½bie Intentu: kontekst = organization + intent + ostatnie wiadomo+ï¿½ci / responses.  
+- NFR-UX-002 ï¿½ï¿½ï¿½ X w jednym widoku widzi ile Intent+ï¿½w jest w Draft/Clarify/Evaluate/Decision.
 
 ---
 
 ## 9. Architektura (high level, X-first)
 
-- Frontend Web (SPA) ÔÇô ekrany dla X (Intent Studio, Decision Room, Pipeline) + Vendor-lite Portal / Y-lite workspace dla Y.  
-- BCOS Core (Backend API) ÔÇô multi-tenant API dla: Organizations, Users, Intents, Criteria, VendorCandidates, VendorResponses, Evaluations, NDA, TrustRooms.  
-- AI Gateway v0 ÔÇô warstwa do obs+éugi wszystkich zada+ä AI (Intent Coach, Criteria Builder, Evaluation Assist, Summaries).  
-- Data Layer ÔÇô relacyjna baza (Postgres), opcjonalnie vector store (RAG na Intentach / odpowiedziach).
+- Frontend Web (SPA) ï¿½ï¿½ï¿½ ekrany dla X (Intent Studio, Decision Room, Pipeline) + Vendor-lite Portal / Y-lite workspace dla Y.  
+- BCOS Core (Backend API) ï¿½ï¿½ï¿½ multi-tenant API dla: Organizations, Users, Intents, Criteria, VendorCandidates, VendorResponses, Evaluations, NDA, TrustRooms.  
+- AI Gateway v0 ï¿½ï¿½ï¿½ warstwa do obs+ï¿½ugi wszystkich zada+ï¿½ AI (Intent Coach, Criteria Builder, Evaluation Assist, Summaries).  
+- Data Layer ï¿½ï¿½ï¿½ relacyjna baza (Postgres), opcjonalnie vector store (RAG na Intentach / odpowiedziach).
 
 Phase 1 korzysta z chmurowych modeli AI przez AI Gateway, vendor-neutral.
 
@@ -548,7 +548,7 @@ Phase 1 korzysta z chmurowych modeli AI przez AI Gateway, vendor-neutral.
 
 ## 10. Data Model v0 (conceptual)
 
-G+é+¦wne encje:
+G+ï¿½+ï¿½wne encje:
 
 - Organization { id, org_type, name, country, industries[], size_band, markets[], languages[], default_language, website, created_at, updated_at }  
 - User { id, organization_id, role, email, preferred_language, created_at, updated_at }  
@@ -562,74 +562,74 @@ G+é+¦wne encje:
 - ConversationMessage { id, intent_id, vendor_candidate_id, author_user_id, content, level (L1|L2), created_at }  
 - AvatarContext { id, organization_id, intent_id, vendor_candidate_id, payload (JSON), updated_at }
 
-Szczeg+¦+éowe typy i relacje zostan-à doprecyzowane w implementacji, ale ten model jest +¦r+¦d+éem prawdy dla Phase 1.
+Szczeg+ï¿½+ï¿½owe typy i relacje zostan-ï¿½ doprecyzowane w implementacji, ale ten model jest +ï¿½r+ï¿½d+ï¿½em prawdy dla Phase 1.
 
 ---
 
 ## 11. Metryki Phase 1 (X-first)
 
-- North Star: skr+¦cenie czasu od "mamy pomys+é/pro+øb-Ö zarz-àdu" do "wybrali+ømy partnera Y" o ÔëÑ 50%.  
+- North Star: skr+ï¿½cenie czasu od "mamy pomys+ï¿½/pro+ï¿½b-ï¿½ zarz-ï¿½du" do "wybrali+ï¿½my partnera Y" o ï¿½ï¿½ï¿½ 50%.  
 - Produkt:
-  - liczba Intent+¦w / org X / miesi-àc,  
-  - % Intent+¦w z uzupe+énionym Decision Model,  
-  - liczba vendor+¦w ocenionych per Intent,  
-  - % Intent+¦w zako+äczonych jawn-à decyzj-à (selected vendor / no-go).  
+  - liczba Intent+ï¿½w / org X / miesi-ï¿½c,  
+  - % Intent+ï¿½w z uzupe+ï¿½nionym Decision Model,  
+  - liczba vendor+ï¿½w ocenionych per Intent,  
+  - % Intent+ï¿½w zako+ï¿½czonych jawn-ï¿½ decyzj-ï¿½ (selected vendor / no-go).  
 - UX/AI:
-  - ocena "Na ile Enabion pom+¦g+é uzasadni-ç decyzj-Ö?" (ankieta u pilot+¦w),  
-  - +ørednia liczba korekt scoringu AI przez u++ytkownik+¦w.
+  - ocena "Na ile Enabion pom+ï¿½g+ï¿½ uzasadni-ï¿½ decyzj-ï¿½?" (ankieta u pilot+ï¿½w),  
+  - +ï¿½rednia liczba korekt scoringu AI przez u++ytkownik+ï¿½w.
 
 ---
 
 ## 12. Kamienie milowe Phase 1 (propozycja)
 
-- **M0 ÔÇô +Ürodowisko pracy, narz-Ödzia, hosting, nazwa robocza (setup ÔÇ×Ja + Mieszko2.0 + EwaÔÇØ) ÔÇô szczeg+¦+éy w 12.1.**  
-- **M1 ÔÇô X Intent Studio E2E:** org X + user + Intent creation + AI + zapis.  
-- **M2 ÔÇô Decision Model + VendorCandidates + zaproszenia.**  
-- **M3 ÔÇô Vendor-lite Portal + Evaluation Matrix (AI scoring).**  
-- **M4 ÔÇô Decision Room + NDA + Trust Room.**  
-- **M5 ÔÇô Frontend typu WoW, UX/CX maksymalne.**  
-- **M6 ÔÇô 3ÔÇô5 pilot+¦w X, kt+¦rzy przeszli przez pe+ény flow i podali feedback.**
+- **M0 ï¿½ï¿½ï¿½ +ï¿½rodowisko pracy, narz-ï¿½dzia, hosting, nazwa robocza (setup ï¿½ï¿½ï¿½Ja + Mieszko2.0 + Ewaï¿½ï¿½ï¿½) ï¿½ï¿½ï¿½ szczeg+ï¿½+ï¿½y w 12.1.**  
+- **M1 ï¿½ï¿½ï¿½ X Intent Studio E2E:** org X + user + Intent creation + AI + zapis.  
+- **M2 ï¿½ï¿½ï¿½ Decision Model + VendorCandidates + zaproszenia.**  
+- **M3 ï¿½ï¿½ï¿½ Vendor-lite Portal + Evaluation Matrix (AI scoring).**  
+- **M4 ï¿½ï¿½ï¿½ Decision Room + NDA + Trust Room.**  
+- **M5 ï¿½ï¿½ï¿½ Frontend typu WoW, UX/CX maksymalne.**  
+- **M6 ï¿½ï¿½ï¿½ 3ï¿½ï¿½ï¿½5 pilot+ï¿½w X, kt+ï¿½rzy przeszli przez pe+ï¿½ny flow i podali feedback.**
 
-### 12.1 M0 ÔÇô Setup ÔÇ×Ja + Mieszko2.0 + EwaÔÇØ ÔÇô pe+ény opis
+### 12.1 M0 ï¿½ï¿½ï¿½ Setup ï¿½ï¿½ï¿½Ja + Mieszko2.0 + Ewaï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ pe+ï¿½ny opis
 
 #### 12.1.1 Cel M0
 
-Celem M0 jest przej+øcie z etapu ÔÇ×mamy tylko Playbook + ten dokument + laptop CEOÔÇØ do sytuacji, w kt+¦rej:
+Celem M0 jest przej+ï¿½cie z etapu ï¿½ï¿½ï¿½mamy tylko Playbook + ten dokument + laptop CEOï¿½ï¿½ï¿½ do sytuacji, w kt+ï¿½rej:
 
-- istnieje **dzia+éaj-àce repozytorium kodu** z pierwszym dzia+éaj-àcym szkieletem aplikacji (Hello BCOS-Enabion),  
-- istnieje **+ørodowisko dev w chmurze (EU)**, na kt+¦rym Ewa mo++e deployowa-ç ka++d-à zmian-Ö,  
-- ustalone s-à **nawyki pracy core teamu** (CEO + Mieszko2.0 + Ewa),  
-- podj-Öte s-à **kluczowe decyzje, kt+¦re trudno zmieni-ç p+¦+¦niej**:
+- istnieje **dzia+ï¿½aj-ï¿½ce repozytorium kodu** z pierwszym dzia+ï¿½aj-ï¿½cym szkieletem aplikacji (Hello BCOS-Enabion),  
+- istnieje **+ï¿½rodowisko dev w chmurze (EU)**, na kt+ï¿½rym Ewa mo++e deployowa-ï¿½ ka++d-ï¿½ zmian-ï¿½,  
+- ustalone s-ï¿½ **nawyki pracy core teamu** (CEO + Mieszko2.0 + Ewa),  
+- podj-ï¿½te s-ï¿½ **kluczowe decyzje, kt+ï¿½re trudno zmieni-ï¿½ p+ï¿½+ï¿½niej**:
   - region danych (EU),  
-  - podej+øcie multi-tenant (org_id w ka++dej tabeli),  
+  - podej+ï¿½cie multi-tenant (org_id w ka++dej tabeli),  
   - bazowy stack technologiczny,  
-  - robocza nazwa produktu i plan na mark-Ö / domen-Ö.
+  - robocza nazwa produktu i plan na mark-ï¿½ / domen-ï¿½.
 
-M0 jest zako+äczone wtedy, gdy:
+M0 jest zako+ï¿½czone wtedy, gdy:
 
-1. CEO widzi dzia+éaj-àc-à stron-Ö startow-à aplikacji w `dev` pod subdomen-à `*.enabion...`.  
+1. CEO widzi dzia+ï¿½aj-ï¿½c-ï¿½ stron-ï¿½ startow-ï¿½ aplikacji w `dev` pod subdomen-ï¿½ `*.enabion...`.  
 2. Ewa mo++e:
-   - sklonowa-ç repo,  
-   - uruchomi-ç projekt lokalnie,  
-   - wypchn-à-ç zmian-Ö na `dev` jednym flow (git push ÔåÆ auto deploy).  
-3. W tym dokumencie dopisane s-à:
+   - sklonowa-ï¿½ repo,  
+   - uruchomi-ï¿½ projekt lokalnie,  
+   - wypchn-ï¿½-ï¿½ zmian-ï¿½ na `dev` jednym flow (git push ï¿½ï¿½ï¿½ auto deploy).  
+3. W tym dokumencie dopisane s-ï¿½:
    - `Stack v0` (sekcja 9.x),  
-   - wype+éniona checklista M0 (12.1.9).  
+   - wype+ï¿½niona checklista M0 (12.1.9).  
 
 ---
 
-#### 12.1.2 Decyzje strategiczne w M0 (trudne do zmiany p+¦+¦niej)
+#### 12.1.2 Decyzje strategiczne w M0 (trudne do zmiany p+ï¿½+ï¿½niej)
 
-W M0 podejmujemy decyzje, kt+¦re b-Öd-à promieniowa+éy na kolejne lata:
+W M0 podejmujemy decyzje, kt+ï¿½re b-ï¿½d-ï¿½ promieniowa+ï¿½y na kolejne lata:
 
-- **Multi-tenancy** ÔÇô od pocz-àtku zak+éadamy, ++e wszystko jest multi-tenant (pole `organization_id` w ka++dej kluczowej tabeli). To jest sp+¦jne z wizj-à BCOS.  
-- **Region danych** ÔÇô EU (Postgres + storage + AI endpointy skonfigurowane pod EU tam, gdzie si-Ö da). U+éatwia to rozmowy z klientami PL/DE.  
-- **Stack webowy** ÔÇô nowoczesny, TypeScript-first, z du++ym ekosystemem (React / Next.js + Node / API + Postgres).  
-- **AI Gateway** ÔÇô jeden punkt integracji z modelami AI (na MVP mo++e korzysta-ç z jednego providera, ale architektura jest neutralna).  
-- **Marka** ÔÇô ÔÇ×EnabionÔÇØ jako g+é+¦wna marka parasolowa, produkt w tym dokumencie nazywamy roboczo **BCOS-Enabion / Enabion BCOS**.  
-- **Single repo** ÔÇô jeden monorepo typu `enabion-bcos` (frontend + backend + infra) zamiast mikrous+éug na starcie.
+- **Multi-tenancy** ï¿½ï¿½ï¿½ od pocz-ï¿½tku zak+ï¿½adamy, ++e wszystko jest multi-tenant (pole `organization_id` w ka++dej kluczowej tabeli). To jest sp+ï¿½jne z wizj-ï¿½ BCOS.  
+- **Region danych** ï¿½ï¿½ï¿½ EU (Postgres + storage + AI endpointy skonfigurowane pod EU tam, gdzie si-ï¿½ da). U+ï¿½atwia to rozmowy z klientami PL/DE.  
+- **Stack webowy** ï¿½ï¿½ï¿½ nowoczesny, TypeScript-first, z du++ym ekosystemem (React / Next.js + Node / API + Postgres).  
+- **AI Gateway** ï¿½ï¿½ï¿½ jeden punkt integracji z modelami AI (na MVP mo++e korzysta-ï¿½ z jednego providera, ale architektura jest neutralna).  
+- **Marka** ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Enabionï¿½ï¿½ï¿½ jako g+ï¿½+ï¿½wna marka parasolowa, produkt w tym dokumencie nazywamy roboczo **BCOS-Enabion / Enabion BCOS**.  
+- **Single repo** ï¿½ï¿½ï¿½ jeden monorepo typu `enabion-bcos` (frontend + backend + infra) zamiast mikrous+ï¿½ug na starcie.
 
-Te decyzje powinny by-ç zmieniane tylko, je+øli oka++e si-Ö to absolutnie konieczne ÔÇô wszystko inne (szczeg+¦+éy UI, biblioteki, struktura folder+¦w) mo++na modyfikowa-ç w Phase 1ÔÇô2.
+Te decyzje powinny by-ï¿½ zmieniane tylko, je+ï¿½li oka++e si-ï¿½ to absolutnie konieczne ï¿½ï¿½ï¿½ wszystko inne (szczeg+ï¿½+ï¿½y UI, biblioteki, struktura folder+ï¿½w) mo++na modyfikowa-ï¿½ w Phase 1ï¿½ï¿½ï¿½2.
 
 ---
 
@@ -743,87 +743,116 @@ W M0 korzystamy z Vercel (EU) + Postgres (EU) u dostawcy klasy Neon/Supabase. Pr
     - opcjonalnie monitoring uptime (np. darmowy status page).
 
 
-#### 12.1.6 M0.4 ÔÇô Zasady wsp+¦+épracy core team (CEO + Mieszko2.0 + Ewa)
+#### 12.1.6 M0.4 ï¿½ï¿½ï¿½ Zasady wsp+ï¿½+ï¿½pracy core team (CEO + Mieszko2.0 + Ewa)
 
 **Role:**
 
-- **CEO** ÔÇô decyzje biznesowe, priorytety, akceptacja milestoneÔÇÖ+¦w, opisuje potrzeby w tym dokumencie (jako komentarze/sekcje).  
-- **Mieszko2.0** ÔÇô t+éumaczy potrzeby CEO na wymagania (sekcje FR, modu+éy, user journeys), proponuje architektur-Ö, pilnuje sp+¦jno+øci z Playbookiem.  
-- **Ewa** ÔÇô implementuje w repo i w chmurze, proponuje techniczne usprawnienia, zg+éasza ryzyka.
+- **CEO** ï¿½ï¿½ï¿½ decyzje biznesowe, priorytety, akceptacja milestoneï¿½ï¿½ï¿½+ï¿½w, opisuje potrzeby w tym dokumencie (jako komentarze/sekcje).  
+- **Mieszko2.0** ï¿½ï¿½ï¿½ t+ï¿½umaczy potrzeby CEO na wymagania (sekcje FR, modu+ï¿½y, user journeys), proponuje architektur-ï¿½, pilnuje sp+ï¿½jno+ï¿½ci z Playbookiem.  
+- **Ewa** ï¿½ï¿½ï¿½ implementuje w repo i w chmurze, proponuje techniczne usprawnienia, zg+ï¿½asza ryzyka.
 
 **Workflow:**
 
-1. CEO dopisuje / zmienia wymagania w tym dokumencie (w odpowiedniej sekcji) lub tworzy kr+¦tk-à notatk-Ö typu ÔÇ×changelogÔÇØ.  
-2. Mieszko2.0 aktualizuje sekcje (np. 5.x, 7.x, 9, 10) tak, aby by+éy jednoznaczne.  
+1. CEO dopisuje / zmienia wymagania w tym dokumencie (w odpowiedniej sekcji) lub tworzy kr+ï¿½tk-ï¿½ notatk-ï¿½ typu ï¿½ï¿½ï¿½changelogï¿½ï¿½ï¿½.  
+2. Mieszko2.0 aktualizuje sekcje (np. 5.x, 7.x, 9, 10) tak, aby by+ï¿½y jednoznaczne.  
 3. Ewa tworzy issues na task boardzie na podstawie tego dokumentu.  
 4. Ewa pracuje na branchach `feature/*`, robi PR do `dev`.  
-5. Po deployu na `dev` CEO ogl-àda demo, zg+éasza uwagi.  
-6. Po akceptacji ÔÇô merge do `main` i deploy na `pilot`.
+5. Po deployu na `dev` CEO ogl-ï¿½da demo, zg+ï¿½asza uwagi.  
+6. Po akceptacji ï¿½ï¿½ï¿½ merge do `main` i deploy na `pilot`.
 
 **Task board (M0)**
 
-- Narz-Ödzie: GitHub Projects 
+- Narz-ï¿½dzie: GitHub Projects 
 - Kolumny: `Backlog`, `In progress (Ewa)`, `Ready for demo`, `Done (on pilot)`.
 - zarzadzane przez Ewe
 
 ---
 
-#### 12.1.7 M0.5 ÔÇô Standard minimalny dla kodu i bezpiecze+ästwa
+#### 12.1.7 M0.5 ï¿½ï¿½ï¿½ Standard minimalny dla kodu i bezpiecze+ï¿½stwa
 
 - **Branching & PR**  
   - Zakaz direct push do `main`.  
-  - Ka++da zmiana na `dev` przez PR (mo++e by-ç self-review Ewy + checklist).  
+  - Ka++da zmiana na `dev` przez PR (mo++e by-ï¿½ self-review Ewy + checklist).  
 
 - **Sekrety i dane wra++liwe**  
-  - ++adne klucze API, has+éa, tokeny nie mog-à by-ç commitowane do repo.  
-  - U++ywamy mechanizm+¦w secret+¦w providera (np. Vercel Secrets + zmienne +ørodowiskowe).  
+  - ++adne klucze API, has+ï¿½a, tokeny nie mog-ï¿½ by-ï¿½ commitowane do repo.  
+  - U++ywamy mechanizm+ï¿½w secret+ï¿½w providera (np. Vercel Secrets + zmienne +ï¿½rodowiskowe).  
 
-- **Konta i dost-Öp**  
-  - CEO i Ewa maj-à konta na hostingu i w repo z w+é-àczonym 2FA.  
-  - Roles: Ewa = pe+éen dost-Öp techniczny, CEO = Owner/Administrator (mo++e akceptowa-ç billing, zaprasza-ç osoby).  
+- **Konta i dost-ï¿½p**  
+  - CEO i Ewa maj-ï¿½ konta na hostingu i w repo z w+ï¿½-ï¿½czonym 2FA.  
+  - Roles: Ewa = pe+ï¿½en dost-ï¿½p techniczny, CEO = Owner/Administrator (mo++e akceptowa-ï¿½ billing, zaprasza-ï¿½ osoby).  
 
 - **Logowanie i audyt**  
-  - Logi deploy+¦w: kto, kiedy, z jakiej ga+é-Özi.  
-  - W przysz+éo+øci (Phase 2+) ÔÇô logi aplikacyjne powi-àzane z organizacjami.
+  - Logi deploy+ï¿½w: kto, kiedy, z jakiej ga+ï¿½-ï¿½zi.  
+  - W przysz+ï¿½o+ï¿½ci (Phase 2+) ï¿½ï¿½ï¿½ logi aplikacyjne powi-ï¿½zane z organizacjami.
 
 ---
 
-#### 12.1.8 M0.6 ÔÇô Nazwa, domena, IP (BCOS-Enabion)
+#### 12.1.8 M0.6 ï¿½ï¿½ï¿½ Nazwa, domena, IP (BCOS-Enabion)
 
-**Cel:** Nie zablokowa-ç si-Ö na nazwie, ale ustali-ç sensown-à strategi-Ö na dzi+ø i na 2030.
+**Cel:** Nie zablokowa-ï¿½ si-ï¿½ na nazwie, ale ustali-ï¿½ sensown-ï¿½ strategi-ï¿½ na dzi+ï¿½ i na 2030.
 
 - **Marka parasolowa:**  
-  - ÔÇ×EnabionÔÇØ ÔÇô jako g+é+¦wna marka firmy i ekosystemu (masz ju++ domen-Ö `enabion...`).  
-  - W Playbooku ÔÇ×EnabionNexusÔÇØ jest nazw-à robocz-à projektu, a ÔÇ×Business Collaboration OS (BCOS)ÔÇØ nazw-à kategorii.  
+  - ï¿½ï¿½ï¿½Enabionï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ jako g+ï¿½+ï¿½wna marka firmy i ekosystemu (masz ju++ domen-ï¿½ `enabion...`).  
+  - W Playbooku ï¿½ï¿½ï¿½EnabionNexusï¿½ï¿½ï¿½ jest nazw-ï¿½ robocz-ï¿½ projektu, a ï¿½ï¿½ï¿½Business Collaboration OS (BCOS)ï¿½ï¿½ï¿½ nazw-ï¿½ kategorii.  
 
 - **Robocza nazwa produktu Phase 1:**  
-  - w tym dokumencie: **ÔÇ×Enabion BCOSÔÇØ / ÔÇ×BCOS-EnabionÔÇØ** jako robocza nazwa produktu (ÔÇ×Business Collaboration OS by EnabionÔÇØ).  
-  - docelowo mo++na zdecydowa-ç, czy na zewn-àtrz wyst-Öpuje jako ÔÇ×Enabion BCOSÔÇØ, czy po prostu ÔÇ×EnabionÔÇØ.
+  - w tym dokumencie: **ï¿½ï¿½ï¿½Enabion BCOSï¿½ï¿½ï¿½ / ï¿½ï¿½ï¿½BCOS-Enabionï¿½ï¿½ï¿½** jako robocza nazwa produktu (ï¿½ï¿½ï¿½Business Collaboration OS by Enabionï¿½ï¿½ï¿½).  
+  - docelowo mo++na zdecydowa-ï¿½, czy na zewn-ï¿½trz wyst-ï¿½puje jako ï¿½ï¿½ï¿½Enabion BCOSï¿½ï¿½ï¿½, czy po prostu ï¿½ï¿½ï¿½Enabionï¿½ï¿½ï¿½.
 
 - **Repo / techniczne nazwy:**  
   - repo: `enabion-bcos`,  
-  - przysz+éy g+é+¦wny serwis: `bcos-core` (nazwy wewn-Ötrzne nie musz-à by-ç identyczne ze znakiem towarowym).
+  - przysz+ï¿½y g+ï¿½+ï¿½wny serwis: `bcos-core` (nazwy wewn-ï¿½trzne nie musz-ï¿½ by-ï¿½ identyczne ze znakiem towarowym).
 
 - **Domeny (M0):**  
-  - root: `enabion.[tld]` ÔÇô ju++ posiadana,  
+  - root: `enabion.[tld]` ï¿½ï¿½ï¿½ ju++ posiadana,  
   - app: `app.enabion.[tld]` lub `bcos.enabion.[tld]` jako roboczy adres produktu,  
-  - w Phase 1 wystarczy jedna domena robocza; p+¦+¦niej mo++na doda-ç np. `enabionbcos.com` je+øli b-Ödzie potrzebne.
+  - w Phase 1 wystarczy jedna domena robocza; p+ï¿½+ï¿½niej mo++na doda-ï¿½ np. `enabionbcos.com` je+ï¿½li b-ï¿½dzie potrzebne.
 
-- **Znak towarowy (M0 = pre-check, nie pe+éna rejestracja):**  
+- **Znak towarowy (M0 = pre-check, nie pe+ï¿½na rejestracja):**  
   - M0 NIE oznacza jeszcze rejestracji znaku w EUIPO, ale:  
-    - sprawdzamy dost-Öpno+ø-ç `ENABION` i kombinacji typu `ENABION BCOS` w bazach:  
+    - sprawdzamy dost-ï¿½pno+ï¿½-ï¿½ `ENABION` i kombinacji typu `ENABION BCOS` w bazach:  
       - EUIPO eSearch + TMview (trade marks w UE),  
       - WIPO Global Brand Database (globalne znaki).  
-    - je+øli nie ma oczywistych konflikt+¦w, planujemy:
-      - rejestracj-Ö s+éownego znaku ÔÇ×ENABIONÔÇØ jako priorytet,  
-      - opcjonalnie rozszerzenie o ÔÇ×ENABION BCOSÔÇØ / ÔÇ×BCOS ENABIONÔÇØ w p+¦+¦niejszym etapie.  
-  - Ten dokument u++ywa ÔÇ×Enabion BCOS / BCOS-EnabionÔÇØ jako **nazwy roboczej**, dop+¦ki nie b-Ödzie formalnej decyzji po konsultacji z rzecznikiem patentowym.
+    - je+ï¿½li nie ma oczywistych konflikt+ï¿½w, planujemy:
+      - rejestracj-ï¿½ s+ï¿½ownego znaku ï¿½ï¿½ï¿½ENABIONï¿½ï¿½ï¿½ jako priorytet,  
+      - opcjonalnie rozszerzenie o ï¿½ï¿½ï¿½ENABION BCOSï¿½ï¿½ï¿½ / ï¿½ï¿½ï¿½BCOS ENABIONï¿½ï¿½ï¿½ w p+ï¿½+ï¿½niejszym etapie.  
+  - Ten dokument u++ywa ï¿½ï¿½ï¿½Enabion BCOS / BCOS-Enabionï¿½ï¿½ï¿½ jako **nazwy roboczej**, dop+ï¿½ki nie b-ï¿½dzie formalnej decyzji po konsultacji z rzecznikiem patentowym.
 
 ---
 
-#### 12.1.9 M0.7 ÔÇô Daty, kamienie i checklista ÔÇ×M0 doneÔÇØ
 
-**Docelowy wynik M0:** wszystko gotowe, aby wej+ø-ç w M1 (budowa X Intent Studio).
+##### 12.1.8.3 Instrukcja podpiecia domeny `enabion.com`
+
+- Dodaj domene w Vercel: Project `enabion-bcos` -> Settings -> Domains -> Add `enabion.com` (apex/root).
+- DNS u providera:
+  - Apex (`@`): A -> `76.76.21.21` (Vercel edge) lub ALIAS/ANAME/CNAME -> `cname.vercel-dns.com` (jesli provider wspiera flattening).
+  - (Opcjonalnie) `www`: CNAME -> `cname.vercel-dns.com` (przekierowanie na root).
+- Po propagacji: Domains w Vercel powinno byc `Valid/Configured`; zrob redeploy z `dev`.
+- Test: https://enabion.com laduje landing BCOS + `/api/health` dziala.
+- Utrzymuj `APP_ENV=dev` i `DATABASE_URL` w env Vercel; brak custom outputDirectory.
+
+##### 12.1.8.4 Trademark check (ENABION / ENABION BCOS)
+
+Status: NOT RUN (wymaga recznego sprawdzenia z dostepem do EUIPO/WIPO).
+
+Zakres:
+- Termy: "ENABION", "ENABION BCOS".
+- Rejestry: EUIPO (TMview / eSearch) i WIPO Global Brand Database.
+
+Do zrobienia (manualnie):
+1) Wyszukaj w EUIPO TMview oba termy (dokladny i podobny) i zapisz: numery, klasy, wlascicieli, status (active/opposed/expired), terytoria.
+2) Wyszukaj w WIPO Global Brand Database te same termy.
+3) Zapisz ewentualne konflikty lub identyczne znaki.
+
+Template notatki po wyszukaniu:
+- EUIPO: <wnioski / brak konfliktu / potencjalny konflikt + klasa + wlasciciel>.
+- WIPO: <wnioski / brak konfliktu / potencjalny konflikt + klasa + wlasciciel>.
+- Rekomendacja: np. brak konfliktu -> green light; jesli konflikt -> konsultacja z rzecznikiem.
+
+#### 12.1.9 M0.7 ï¿½ï¿½ï¿½ Daty, kamienie i checklista ï¿½ï¿½ï¿½M0 doneï¿½ï¿½ï¿½
+
+**Docelowy wynik M0:** wszystko gotowe, aby wej+ï¿½-ï¿½ w M1 (budowa X Intent Studio).
 
 **Checklista M0 (musi byc odhaczona w tym dokumencie):**
 
@@ -869,22 +898,22 @@ Kiedy wszystkie pola checklisty sa odhaczone, mozna formalnie uznac, ze **M0 jes
 ---
 
 
-## 13. Za+éo++enia, ryzyka, otwarte pytania
+## 13. Za+ï¿½o++enia, ryzyka, otwarte pytania
 
-Za+éo++enia:
+Za+ï¿½o++enia:
 
-- X ma przynajmniej 1ÔÇô2 potencjalnych vendor+¦w do por+¦wnania (BYOV).  
-- X jest gotowe wprowadzi-ç Intent Studio i Decision Model jako standard wewn-Ötrzny.  
-- PL/DE jako rynki pilota++owe s-à wystarczaj-àce do walidacji.
+- X ma przynajmniej 1ï¿½ï¿½ï¿½2 potencjalnych vendor+ï¿½w do por+ï¿½wnania (BYOV).  
+- X jest gotowe wprowadzi-ï¿½ Intent Studio i Decision Model jako standard wewn-ï¿½trzny.  
+- PL/DE jako rynki pilota++owe s-ï¿½ wystarczaj-ï¿½ce do walidacji.
 
 Ryzyka:
 
-- GTM do X jest wolniejszy ni++ do Y (d+éu++szy cykl decyzyjny).  
-- Scope creep w stron-Ö pe+énego narz-Ödzia RFP/procurement.  
-- Vendorzy Y mog-à niech-Ötnie wype+énia-ç kolejny formularz (+éagodzimy to Avatarem i sensown-à struktur-à).
+- GTM do X jest wolniejszy ni++ do Y (d+ï¿½u++szy cykl decyzyjny).  
+- Scope creep w stron-ï¿½ pe+ï¿½nego narz-ï¿½dzia RFP/procurement.  
+- Vendorzy Y mog-ï¿½ niech-ï¿½tnie wype+ï¿½nia-ï¿½ kolejny formularz (+ï¿½agodzimy to Avatarem i sensown-ï¿½ struktur-ï¿½).
 
 Otwarte pytania:
 
-- Czy w Phase 1 wspieramy eksport RFP (Intent + kryteria + context) do PDF/Word? ÔÇô [CEO] Domy+ølnie export jest przez Enabion, ale wspieramy te++ PDF/Word, kt+¦re mo++e by-ç u++yte wewn-Ötrznie przez u++ytkownika.  
-- Czy dodajemy placeholder "Enabion suggested vendors" (manualnie kuratorowane na pocz-àtku)? ÔÇô [CEO] Tak, odpalamy to w MVP (w formie Avatara proponuj-àcego vendor+¦w z publicznych +¦r+¦de+é + r-Öczny wyb+¦r X).  
-- Po ilu pilotach X przechodzimy do Phase 2 ÔÇô pe+énego OS dla Y? ÔÇô [CEO] TBD.
+- Czy w Phase 1 wspieramy eksport RFP (Intent + kryteria + context) do PDF/Word? ï¿½ï¿½ï¿½ [CEO] Domy+ï¿½lnie export jest przez Enabion, ale wspieramy te++ PDF/Word, kt+ï¿½re mo++e by-ï¿½ u++yte wewn-ï¿½trznie przez u++ytkownika.  
+- Czy dodajemy placeholder "Enabion suggested vendors" (manualnie kuratorowane na pocz-ï¿½tku)? ï¿½ï¿½ï¿½ [CEO] Tak, odpalamy to w MVP (w formie Avatara proponuj-ï¿½cego vendor+ï¿½w z publicznych +ï¿½r+ï¿½de+ï¿½ + r-ï¿½czny wyb+ï¿½r X).  
+- Po ilu pilotach X przechodzimy do Phase 2 ï¿½ï¿½ï¿½ pe+ï¿½nego OS dla Y? ï¿½ï¿½ï¿½ [CEO] TBD.
