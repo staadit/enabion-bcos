@@ -258,6 +258,23 @@ M0 is done when: CEO sees the app landing in `dev` under Enabion domain; Ewa can
 - Brand: “Enabion” umbrella; product working name **Enabion BCOS**.  
 - Single repo: monorepo `enabion-bcos` (frontend + backend + infra) over microservices for start.
 
+#### 12.1.3 M0.0 Ways of Working
+
+### Goal
+- Zdefiniowanie ról: CEO, Mieszko2.0, Ewa (jak w 12.1.6).
+- Ustalenie workflow 1–6 (CEO → spec → issues → PR → demo → pilot).
+- Konfiguracja GitHub Project z kolumnami: - Done
+  - `Backlog`
+  - `In progress (Ewa)`
+  - `For CEO`
+  - `Done (on pilot)`
+- Ustalenie standardu opisu issue: - Done
+  `Goal | Scope | Tasks | Definition of Done`.
+- Ustalenie zasad: - Done
+  - taski wykonawcze oznaczane w treści jako `[Ewa]`,
+  - zadania CEO w osobnym issue na milestone (label `CEO`).
+
+
 #### 12.1.3 M0.1 – Repository and tools (issue #2)
 - Monorepo layout:
   ```
@@ -371,6 +388,7 @@ Completed on 2025-12-05 — CEO confirmed root domain and API health.
 - Synced by: Ewa
 - Status: #2–#7 DONE; #8–#12 added (Backlog; #8 In progress)
 - Drift: NO
+- M1.1 dev routes: `/register` (org + first user) and POST `/api/auth/register` (maps to registerTenant service).
 
 #### 12.1.11 M0 factual state
 - Issues M0 (#2–#7): closed (M0 completed on development side).  

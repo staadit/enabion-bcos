@@ -51,6 +51,7 @@ This repository holds the code for Phase 1 (X-first MVP) and is governed by `doc
 5) Prisma: `pnpm db:generate`, and when DB is reachable `pnpm db:migrate`.
 6) Run web: `pnpm dev` -> http://localhost:3000.
 7) Healthcheck: http://localhost:3000/api/health (with DB: `status: "ok"`, without DB: `status: "degraded"`).
+8) Registration flow (M1.1): open http://localhost:3000/register to create org + first user (calls POST `/api/auth/register`).
 
 ## Docs
 
@@ -58,6 +59,10 @@ This repository holds the code for Phase 1 (X-first MVP) and is governed by `doc
 - Business Playbook: `./docs/EnabionNexus_Playbook_v1.6.md`.
 - CTO log: `./docs/cto/ctolog_2025-12.md` (operational log).
 - README and board must stay in sync with the spec (see section 12 in the spec).
+
+## Tests
+
+- Core domain (auth/tenancy): `pnpm --filter @enabion/core test` (requires `DATABASE_URL` set, e.g., from `.env.local`).
 
 ## Ways of working (CEO + Mieszko2.0 + Ewa)
 
