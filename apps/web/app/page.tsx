@@ -30,7 +30,7 @@ export default function HomePage() {
     <main className="page">
       <section className="hero">
         <p className="eyebrow">Business Collaboration OS</p>
-        <h1>Enabion BCOS - Phase 1 (X-first)</h1>
+        <h1>Enabion BCOS — Phase 1 (X-first MVP)</h1>
         <p className="lede">
           Intent -&gt; Decision for X-first: foundation for Enabion BCOS with shared core, Prisma-backed
           Postgres, and deploy-ready Next.js app.

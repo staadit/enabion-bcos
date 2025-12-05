@@ -14,6 +14,7 @@ export async function GET() {
     status,
     app: 'enabion-bcos',
     env: appEnv?.trim() || 'local',
+    version: 'm0',
     db,
     timestamp: new Date().toISOString(),
     organizationsCount: result.count ?? 0,
