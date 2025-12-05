@@ -297,7 +297,7 @@ M0 is done when: CEO sees the app landing in `dev` under Enabion domain; Ewa can
 - Status (2025-12-05): done; CEO confirmed root-domain deployment and `/api/health`; issue #4 closed.
 
 #### 12.1.6 M0.4 – DB (Postgres EU) connected (issue #5)
-- Managed Postgres in EU (provider-neutral: Neon/Supabase/etc.).  
+- Managed Postgres in EU (provider-neutral: Neon.).  
 - `DATABASE_URL` set locally (`.env.local`) and in Vercel Dev env.  
 - `pnpm db:generate` and `pnpm db:migrate` succeed on dev DB.  
 - Prisma schema at `packages/core/prisma/schema.prisma`; `Organization` model/table exists.  
@@ -338,12 +338,12 @@ M0 is done when: CEO sees the app landing in `dev` under Enabion domain; Ewa can
    - [x] ORM (Prisma) configured and Postgres connected (at least one simple table).  
    - [x] `ai-gateway` module/config placeholder with a simple call/healthcheck.
 3. **Hosting**
-   - [x] Hosting account (e.g., Vercel) + DB account (e.g., Supabase/Neon) in EU.  
+   - [x] Hosting account (e.g., Vercel) + DB account (e.g., Neon) in EU.  
    - [x] `dev` environment wired to branch `dev`.  
    - [x] Dev URL works and CEO sees landing.  
    - [x] DB backup enabled.
 4. **Collaboration**
-   - [x] Task board established (`Backlog → In progress → Ready for demo → Done`).  
+   - [x] Task board established (`Backlog → In progress → For CEO → Ready for demo → Done`).  
    - [x] 2FA enabled on Git/hosting accounts.  
    - [x] PR flow tested (feature/* → dev → deploy).
 5. **Name / domain / IP**
@@ -361,15 +361,15 @@ Completed on 2025-12-05 — CEO confirmed root domain and API health.
 | M0.5 – Dev environment on Vercel        | #4           | Done                            |
 | M0.5b – DB (Postgres EU) connected      | #5           | Done                            |
 | M0.6 – Healthcheck endpoint             | #6           | Done                            |
-| M0.8 – Naming, domain & IP baseline     | #7           | Done (TM follow-up tracked)     |
+| M0.8 – Naming, domain & IP baseline     | #7           | Done                            |
 
-#### 12.1.10 Board Sync Status (M0)
+#### 12.1.10 Board Sync Status (M0 + M1 kickoff)
 - Spec version: v0.6
 - Board: GitHub Project "Enabion-BCOS"
-- Scope: M0 only (issues #2–#7)
+- Scope: M0 + M1.1–M1.5 (issues #2–#12)
 - Last sync: 2025-12-05
 - Synced by: Ewa
-- Status: #2–#7 DONE
+- Status: #2–#7 DONE; #8–#12 added (Backlog; #8 In progress)
 - Drift: NO
 
 #### 12.1.11 M0 factual state
