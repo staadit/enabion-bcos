@@ -7,6 +7,8 @@
   "scripts": {
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate deploy --schema=prisma/schema.prisma",
+    "test": "vitest --run",
+    "test:watch": "vitest watch",
     "lint": "eslint \"src/**/*.{ts,tsx}\" --max-warnings=0",
     "format": "prettier --write \"src/**/*.{ts,tsx,js,json}\"",
     "typecheck": "tsc --noEmit"
@@ -16,6 +18,12 @@
     "bcryptjs": "^3.0.3"
   },
   "devDependencies": {
-    "prisma": "5.17.0"
+    "dotenv": "^16.4.5",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^20.11.30",
+    "prisma": "5.17.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2"
   }
 }
